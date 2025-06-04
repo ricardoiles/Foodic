@@ -1,0 +1,1171 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- AUTHOR -->
+    <meta name="csrf-token" content="6yqkZqWWUr1EKwzGgIZezbglHENj7YQRrwovD9Q7">
+
+        <meta property="og:url" content="https://demo.food-bank.xyz/restaurant/the-salad-god">
+    <meta property="og:type" content="Food Bank">
+    <meta property="og:title" content="The Salad God">
+    <meta property="og:description" content="A regal culinary retreat where opulence meets flavor, offering a menu that fuses tradition and innovation. Indulge in a majestic dining experience, where every dish is crafted with a commitment to royal excellence and hospitality.">
+    <meta property="og:image" content="https://demo.food-bank.xyz/storage/8/conversions/the-salad-god-image.jpg">
+
+    <!-- WEBPAGE TITLE -->
+    <title>
+                Food Bank : Frontend
+            </title>
+
+    <!-- FAVICON -->
+    <link href="../images/seeder/settings/favicon.png" rel="shortcut icon" type="image/x-icon">
+
+    <!-- LIBRARY -->
+    <link rel="stylesheet" href="../frontend/lib/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../frontend/lib/bootstrap/bootstrap.min.css">
+
+    <!-- FONTS -->
+    <link rel="stylesheet" href="../frontend/fonts/lineicons/lineicons.min.css">
+    <link rel="stylesheet" href="../frontend/fonts/fontawesome/fontawesome.min.css">
+    <link rel="stylesheet" href="../frontend/fonts/opensauce/opensauce.min.css">
+
+    <!-- iziToast -->
+    <link rel="stylesheet" href="../assets/modules/izitoast/dist/css/iziToast.min.css">
+
+    <!-- CUSTOM -->
+    <link rel="stylesheet" href="../frontend/css/expanded/style.css">
+
+    <!-- My Custom Css -->
+    <link rel="stylesheet" href="../frontend/css/expanded/custom.css">
+
+
+            <!-- Livewire Styles --><style>[wire\:loading][wire\:loading], [wire\:loading\.delay][wire\:loading\.delay], [wire\:loading\.inline-block][wire\:loading\.inline-block], [wire\:loading\.inline][wire\:loading\.inline], [wire\:loading\.block][wire\:loading\.block], [wire\:loading\.flex][wire\:loading\.flex], [wire\:loading\.table][wire\:loading\.table], [wire\:loading\.grid][wire\:loading\.grid], [wire\:loading\.inline-flex][wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.none][wire\:loading\.delay\.none], [wire\:loading\.delay\.shortest][wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter][wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short][wire\:loading\.delay\.short], [wire\:loading\.delay\.default][wire\:loading\.delay\.default], [wire\:loading\.delay\.long][wire\:loading\.delay\.long], [wire\:loading\.delay\.longer][wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest][wire\:loading\.delay\.longest] {display: none;}[wire\:offline][wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}:root {--livewire-progress-bar-color: #2299dd;}[x-cloak] {display: none !important;}</style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#scrollspy-menu" data-bs-smooth-scroll="true">
+
+    <div id="main-wrapper">
+        <!--========== HEADER PART START ===========-->
+<header class="heder-padding">
+    <div class="header fixed sticky">
+        <div class="container">
+            <div class="header-content">
+
+                <a href="../index.htm" class="header-logo">
+                    <img src="../images/seeder/settings/logo.png" data-sticky-logo="https://demo.food-bank.xyz/images/seeder/settings/logo.png" alt="logo">
+                </a>
+
+                
+                <div class="header-group">
+                    <a href="javascript:void(0)" class="header-cart" id="cartLink">
+                        <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.3066 5.97335C12.8599 5.48002 12.1866 5.19335 11.2532 5.09335V4.58668C11.2532 3.67335 10.8666 2.79335 10.1866 2.18001C9.49991 1.55335 8.60658 1.26001 7.67991 1.34668C6.08658 1.50001 4.74658 3.04001 4.74658 4.70668V5.09335C3.81325 5.19335 3.13991 5.48002 2.69325 5.97335C2.04658 6.69335 2.06658 7.65335 2.13991 8.32001L2.60658 12.0333C2.74658 13.3333 3.27325 14.6667 6.13991 14.6667H9.85991C12.7266 14.6667 13.2532 13.3333 13.3932 12.04L13.8599 8.31335C13.9332 7.65335 13.9466 6.69335 13.3066 5.97335ZM7.77324 2.27335C8.43991 2.21335 9.07325 2.42002 9.56658 2.86668C10.0532 3.30668 10.3266 3.93335 10.3266 4.58668V5.05335H5.67325V4.70668C5.67325 3.52002 6.65324 2.38002 7.77324 2.27335ZM5.61325 8.76668H5.60658C5.23991 8.76668 4.93991 8.46668 4.93991 8.10002C4.93991 7.73335 5.23991 7.43335 5.60658 7.43335C5.97991 7.43335 6.27991 7.73335 6.27991 8.10002C6.27991 8.46668 5.97991 8.76668 5.61325 8.76668ZM10.2799 8.76668H10.2732C9.90658 8.76668 9.60658 8.46668 9.60658 8.10002C9.60658 7.73335 9.90658 7.43335 10.2732 7.43335C10.6466 7.43335 10.9466 7.73335 10.9466 8.10002C10.9466 8.46668 10.6466 8.76668 10.2799 8.76668Z" fill="white"></path>
+                        </svg>
+
+                                                    <sup id="nacCount">0</sup>
+                                            </a>
+                                            <div class="header-selection">
+                            <button type="button" class="header-selection-btn">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                        🇧🇩&nbsp
+                                            <span>
+                                                Bangla
+                                            </span>
+                                                                                                                                            <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                            <ul class="header-selection-list">
+                                                                    <li>
+                                        <a href="../index.htm" class="p-0">
+                                            🇬🇧&nbsp
+                                            <span>
+                                                English
+                                            </span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="../index.htm" class="p-0">
+                                            🇩🇪&nbsp
+                                            <span>
+                                                German
+                                            </span>
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="../index.htm" class="p-0">
+                                            🇧🇩&nbsp
+                                            <span>
+                                                Bangla
+                                            </span>
+                                        </a>
+                                    </li>
+                                                            </ul>
+                        </div>
+                    
+                                            <!--~~~~~~~~~~~~ BEFORE SIGNIN/SIGNUP CODE START ~~~~~~~~~~-->
+                        <div class="header-auth">
+                            <button type="button" class="header-auth-btn">
+                                <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.6666 8.00004C14.6666 4.32671 11.6733 1.33337 7.99992 1.33337C4.32659 1.33337 1.33325 4.32671 1.33325 8.00004C1.33325 9.93337 2.16659 11.6734 3.48659 12.8934C3.48659 12.9 3.48658 12.9 3.47992 12.9067C3.54659 12.9734 3.62659 13.0267 3.69325 13.0867C3.73325 13.12 3.76659 13.1534 3.80659 13.18C3.92659 13.28 4.05992 13.3734 4.18659 13.4667C4.23325 13.5 4.27325 13.5267 4.31992 13.56C4.44659 13.6467 4.57992 13.7267 4.71992 13.8C4.76659 13.8267 4.81992 13.86 4.86659 13.8867C4.99992 13.96 5.13992 14.0267 5.28658 14.0867C5.33992 14.1134 5.39325 14.14 5.44659 14.16C5.59325 14.22 5.73992 14.2734 5.88658 14.32C5.93992 14.34 5.99325 14.36 6.04658 14.3734C6.20658 14.42 6.36658 14.46 6.52659 14.5C6.57325 14.5134 6.61992 14.5267 6.67325 14.5334C6.85992 14.5734 7.04658 14.6 7.23992 14.62C7.26658 14.62 7.29325 14.6267 7.31992 14.6334C7.54658 14.6534 7.77325 14.6667 7.99992 14.6667C8.22658 14.6667 8.45325 14.6534 8.67325 14.6334C8.69992 14.6334 8.72658 14.6267 8.75325 14.62C8.94658 14.6 9.13325 14.5734 9.31992 14.5334C9.36658 14.5267 9.41325 14.5067 9.46658 14.5C9.62659 14.46 9.79325 14.4267 9.94658 14.3734C9.99992 14.3534 10.0533 14.3334 10.1066 14.32C10.2533 14.2667 10.4066 14.22 10.5466 14.16C10.5999 14.14 10.6533 14.1134 10.7066 14.0867C10.8466 14.0267 10.9866 13.96 11.1266 13.8867C11.1799 13.86 11.2266 13.8267 11.2733 13.8C11.4066 13.72 11.5399 13.6467 11.6733 13.56C11.7199 13.5334 11.7599 13.5 11.8066 13.4667C11.9399 13.3734 12.0666 13.28 12.1866 13.18C12.2266 13.1467 12.2599 13.1134 12.2999 13.0867C12.3733 13.0267 12.4466 12.9667 12.5133 12.9067C12.5133 12.9 12.5133 12.9 12.5066 12.8934C13.8333 11.6734 14.6666 9.93337 14.6666 8.00004ZM11.2933 11.3134C9.48658 10.1 6.52659 10.1 4.70658 11.3134C4.41325 11.5067 4.17325 11.7334 3.97325 11.98C2.95992 10.9534 2.33325 9.54671 2.33325 8.00004C2.33325 4.87337 4.87325 2.33337 7.99992 2.33337C11.1266 2.33337 13.6666 4.87337 13.6666 8.00004C13.6666 9.54671 13.0399 10.9534 12.0266 11.98C11.8333 11.7334 11.5866 11.5067 11.2933 11.3134Z" fill="#EE1D48"></path>
+                                    <path d="M8 4.62C6.62 4.62 5.5 5.74 5.5 7.12C5.5 8.47333 6.56 9.57333 7.96667 9.61333C7.98667 9.61333 8.01333 9.61333 8.02667 9.61333C8.04 9.61333 8.06 9.61333 8.07333 9.61333C8.08 9.61333 8.08667 9.61333 8.08667 9.61333C9.43333 9.56666 10.4933 8.47333 10.5 7.12C10.5 5.74 9.38 4.62 8 4.62Z" fill="#EE1D48"></path>
+                                </svg>
+                            </button>
+                            <nav class="header-auth-navs">
+                                <a href="../login.html">
+                                    <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.2 1.33337H9.46667C7.33333 1.33337 6 2.66671 6 4.80004V7.50004H8.96L7.58 6.12004C7.48 6.02004 7.43333 5.89337 7.43333 5.76671C7.43333 5.64004 7.48 5.51337 7.58 5.41337C7.77333 5.22004 8.09333 5.22004 8.28667 5.41337L10.52 7.64671C10.7133 7.84004 10.7133 8.16004 10.52 8.35337L8.28667 10.5867C8.09333 10.78 7.77333 10.78 7.58 10.5867C7.38667 10.3934 7.38667 10.0734 7.58 9.88004L8.96 8.50004H6V11.2C6 13.3334 7.33333 14.6667 9.46667 14.6667H11.1933C13.3267 14.6667 14.66 13.3334 14.66 11.2V4.80004C14.6667 2.66671 13.3333 1.33337 11.2 1.33337Z" fill="#EE1D48"></path>
+                                        <path d="M1.83325 7.5C1.55992 7.5 1.33325 7.72667 1.33325 8C1.33325 8.27333 1.55992 8.5 1.83325 8.5H5.99992V7.5H1.83325Z" fill="#EE1D48"></path>
+                                    </svg>
+                                    <span> সাইন ইন করুন </span>
+                                </a>
+                                <a href="../register.html">
+                                    <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.6467 1.55329C14.1667 1.00663 13.4533 0.666626 12.6667 0.666626C11.92 0.666626 11.24 0.973293 10.7533 1.47329C10.4733 1.75996 10.26 2.10663 10.1333 2.49329C10.0467 2.75996 10 3.03996 10 3.33329C10 3.83329 10.14 4.30663 10.3867 4.70663C10.52 4.93329 10.6933 5.13996 10.8933 5.31329C11.36 5.73996 11.98 5.99996 12.6667 5.99996C12.96 5.99996 13.24 5.95329 13.5 5.85996C14.1133 5.66663 14.6267 5.24663 14.9467 4.70663C15.0867 4.47996 15.1933 4.21996 15.2533 3.95329C15.3067 3.75329 15.3333 3.54663 15.3333 3.33329C15.3333 2.65329 15.0733 2.02663 14.6467 1.55329ZM13.66 3.81996H13.1667V4.33996C13.1667 4.61329 12.94 4.83996 12.6667 4.83996C12.3933 4.83996 12.1667 4.61329 12.1667 4.33996V3.81996H11.6733C11.4 3.81996 11.1733 3.59329 11.1733 3.31996C11.1733 3.04663 11.4 2.81996 11.6733 2.81996H12.1667V2.34663C12.1667 2.07329 12.3933 1.84663 12.6667 1.84663C12.94 1.84663 13.1667 2.07329 13.1667 2.34663V2.81996H13.66C13.9333 2.81996 14.16 3.04663 14.16 3.31996C14.16 3.59329 13.94 3.81996 13.66 3.81996Z" fill="#EE1D48"></path>
+                                        <path d="M14.6666 8.00004C14.6666 7.12671 14.4999 6.28671 14.1866 5.52004C13.9799 5.66671 13.7466 5.78004 13.4999 5.86004C13.4266 5.88671 13.3533 5.90671 13.2733 5.92671C13.5266 6.56671 13.6666 7.26671 13.6666 8.00004C13.6666 9.54671 13.0399 10.9534 12.0266 11.98C11.8333 11.7334 11.5866 11.5067 11.2933 11.3134C9.48658 10.1 6.52659 10.1 4.70658 11.3134C4.41325 11.5067 4.17325 11.7334 3.97325 11.98C2.95992 10.9534 2.33325 9.54671 2.33325 8.00004C2.33325 4.87337 4.87325 2.33337 7.99992 2.33337C8.72658 2.33337 9.42659 2.47337 10.0666 2.72671C10.0866 2.64671 10.1066 2.57337 10.1333 2.49337C10.2133 2.24671 10.3266 2.02004 10.4799 1.81337C9.71325 1.50004 8.87325 1.33337 7.99992 1.33337C4.32659 1.33337 1.33325 4.32671 1.33325 8.00004C1.33325 9.93337 2.16659 11.6734 3.48659 12.8934C3.48659 12.9 3.48658 12.9 3.47992 12.9067C3.54659 12.9734 3.62659 13.0267 3.69325 13.0867C3.73325 13.12 3.76659 13.1534 3.80659 13.18C3.92659 13.28 4.05992 13.3734 4.18659 13.4667C4.23325 13.5 4.27325 13.5267 4.31992 13.56C4.44659 13.6467 4.57992 13.7267 4.71992 13.8C4.76659 13.8267 4.81992 13.86 4.86659 13.8867C4.99992 13.96 5.13992 14.0267 5.28658 14.0867C5.33992 14.1134 5.39325 14.14 5.44659 14.16C5.59325 14.22 5.73992 14.2734 5.88658 14.32C5.93992 14.34 5.99325 14.36 6.04658 14.3734C6.20658 14.42 6.36658 14.46 6.52659 14.5C6.57325 14.5134 6.61992 14.5267 6.67325 14.5334C6.85992 14.5734 7.04658 14.6 7.23992 14.62C7.26658 14.62 7.29325 14.6267 7.31992 14.6334C7.54658 14.6534 7.77325 14.6667 7.99992 14.6667C8.22658 14.6667 8.45325 14.6534 8.67325 14.6334C8.69992 14.6334 8.72658 14.6267 8.75325 14.62C8.94658 14.6 9.13325 14.5734 9.31992 14.5334C9.36658 14.5267 9.41325 14.5067 9.46658 14.5C9.62659 14.46 9.79325 14.4267 9.94658 14.3734C9.99992 14.3534 10.0533 14.3334 10.1066 14.32C10.2533 14.2667 10.4066 14.22 10.5466 14.16C10.5999 14.14 10.6533 14.1134 10.7066 14.0867C10.8466 14.0267 10.9866 13.96 11.1266 13.8867C11.1799 13.86 11.2266 13.8267 11.2733 13.8C11.4066 13.72 11.5399 13.6467 11.6733 13.56C11.7199 13.5334 11.7599 13.5 11.8066 13.4667C11.9399 13.3734 12.0666 13.28 12.1866 13.18C12.2266 13.1467 12.2599 13.1134 12.2999 13.0867C12.3733 13.0267 12.4466 12.9667 12.5133 12.9067C12.5133 12.9 12.5133 12.9 12.5066 12.8934C13.8333 11.6734 14.6666 9.93337 14.6666 8.00004Z" fill="#EE1D48"></path>
+                                        <path d="M8 4.62C6.62 4.62 5.5 5.74 5.5 7.12C5.5 8.47333 6.56 9.57333 7.96667 9.61333C7.98667 9.61333 8.01333 9.61333 8.02667 9.61333C8.04 9.61333 8.06 9.61333 8.07333 9.61333C8.08 9.61333 8.08667 9.61333 8.08667 9.61333C9.43333 9.56666 10.4933 8.47333 10.5 7.12C10.5 5.74 9.38 4.62 8 4.62Z" fill="#EE1D48"></path>
+                                    </svg>
+                                    <span> নিবন্ধন করুন</span>
+                                </a>
+                            </nav>
+                        </div>
+                        <!--~~~~~~~ BEFORE SIGNIN/SIGNUP CODE END ~~~~~~~~-->
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--===== HEADER PART END ========-->
+
+        
+    <!--====== RESTAURANT PART START =========-->
+    <section class="restaurant">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-8 rest-col">
+                    <div class="rest-content">
+                        <figure class="rest-media">
+                            <a class="d-block" href="the-salad-god.html">
+                                <img src="../storage/8/conversions/the-salad-god-image.jpg" alt="restaurant">
+                            </a>
+                        </figure>
+
+                        <div class="rest-profile">
+                            <div class="rest-info">
+                                <h1 class="rest-name">
+                                                                            <span class="dot off me-1" title="Close Now"></span>
+                                                                        The Salad God
+                                </h1>
+                                <p class="rest-title">
+                                                                                                                        Asian
+                                                                                            <span>,</span>
+                                                                                                                                Dessert
+                                                                                                                                                        </p>
+                                                                <div class="rest-location">
+                                    <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.99992 8.95346C9.14867 8.95346 10.0799 8.02221 10.0799 6.87346C10.0799 5.7247 9.14867 4.79346 7.99992 4.79346C6.85117 4.79346 5.91992 5.7247 5.91992 6.87346C5.91992 8.02221 6.85117 8.95346 7.99992 8.95346Z" stroke="#1F1F39" stroke-width="1.5"></path>
+                                        <path d="M2.4133 5.66016C3.72664 -0.113169 12.28 -0.106502 13.5866 5.66683C14.3533 9.0535 12.2466 11.9202 10.4 13.6935C9.05997 14.9868 6.93997 14.9868 5.5933 13.6935C3.7533 11.9202 1.64664 9.04683 2.4133 5.66016Z" stroke="#1F1F39" stroke-width="1.5"></path>
+                                    </svg>
+                                    <span> 250 W 72nd St, New York, United State </span>
+                                </div>
+                            </div>
+                            <div class="rest-btns">
+                                                                    <button type="button" class="rest-book-btn" data-bs-toggle="modal" data-bs-target="#booking-modal">
+                                        <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.3335 1.3335V3.3335" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M10.6665 1.3335V3.3335" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M2.3335 6.06006H13.6668" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M14 5.66683V11.3335C14 13.3335 13 14.6668 10.6667 14.6668H5.33333C3 14.6668 2 13.3335 2 11.3335V5.66683C2 3.66683 3 2.3335 5.33333 2.3335H10.6667C13 2.3335 14 3.66683 14 5.66683Z" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M10.463 9.13314H10.469" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M10.463 11.1331H10.469" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M7.99715 9.13314H8.00314" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M7.99715 11.1331H8.00314" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M5.52938 9.13314H5.53537" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M5.52938 11.1331H5.53537" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                        <span>টেবিল অর্ডার </span>
+                                    </button>
+                                                                <button type="button" class="rest-info-btn" data-bs-toggle="modal" data-bs-target="#shop-modal">
+                                    <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.00016 14.6668C11.6668 14.6668 14.6668 11.6668 14.6668 8.00016C14.6668 4.3335 11.6668 1.3335 8.00016 1.3335C4.3335 1.3335 1.3335 4.3335 1.3335 8.00016C1.3335 11.6668 4.3335 14.6668 8.00016 14.6668Z" stroke="#EE1D48" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M8 5.3335V8.66683" stroke="#EE1D48" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M7.99609 10.6665H8.00208" stroke="#EE1D48" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                                                                                    <div class="rest-voucher d-inline-block">
+                                                                        <button class="me-2">
+                                        কুপন : 
+                                        <span>off10</span>
+                                    </button>
+                                </div>
+                                                    
+                        <div class="rest-menu-wrapper" id="scrollspy-menu">
+                            <div class="rest-menu-group">
+                                <button type="button" class="rest-swiper-prev fa-solid fa-chevron-left"></button>
+                                <div class="swiper rest-swiper">
+                                    <nav class="swiper-wrapper">
+                                                                                    <a href="#listing_product11" wire:key="11" class="swiper-slide">
+                                                Bam! Snacks
+                                            </a>
+                                                                                    <a href="#listing_product6" wire:key="6" class="swiper-slide">
+                                                Specialties
+                                            </a>
+                                                                                    <a href="#listing_product32" wire:key="32" class="swiper-slide">
+                                                Iced Teas
+                                            </a>
+                                                                                    <a href="#listing_product47" wire:key="47" class="swiper-slide">
+                                                Vibrant Veggie Delights
+                                            </a>
+                                                                                    <a href="#listing_product48" wire:key="48" class="swiper-slide">
+                                                Nutrient-Packed Power Bowls
+                                            </a>
+                                                                                    <a href="#listing_product8" wire:key="8" class="swiper-slide">
+                                                Featured
+                                            </a>
+                                                                                                                            <a href="#listing_product_other" class="swiper-slide">
+                                                অন্যান্য
+                                            </a>
+                                                                            </nav>
+                                </div>
+                                <button type="button" class="rest-swiper-next fa-solid fa-chevron-right"></button>
+                            </div>
+                        </div>
+
+                        <div wire:snapshot="{&quot;data&quot;:{&quot;categories_products&quot;:[{&quot;11&quot;:[{&quot;1&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\MenuItem&quot;,&quot;key&quot;:31,&quot;s&quot;:&quot;mdl&quot;}],&quot;4&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\MenuItem&quot;,&quot;key&quot;:41,&quot;s&quot;:&quot;mdl&quot;}],&quot;6&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\MenuItem&quot;,&quot;key&quot;:46,&quot;s&quot;:&quot;mdl&quot;}],&quot;7&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\MenuItem&quot;,&quot;key&quot;:47,&quot;s&quot;:&quot;mdl&quot;}]},{&quot;s&quot;:&quot;arr&quot;}],&quot;6&quot;:[{&quot;2&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\MenuItem&quot;,&quot;key&quot;:36,&quot;s&quot;:&quot;mdl&quot;}]},{&quot;s&quot;:&quot;arr&quot;}],&quot;32&quot;:[{&quot;3&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\MenuItem&quot;,&quot;key&quot;:37,&quot;s&quot;:&quot;mdl&quot;}]},{&quot;s&quot;:&quot;arr&quot;}],&quot;47&quot;:[{&quot;5&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\MenuItem&quot;,&quot;key&quot;:43,&quot;s&quot;:&quot;mdl&quot;}]},{&quot;s&quot;:&quot;arr&quot;}],&quot;48&quot;:[{&quot;8&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\MenuItem&quot;,&quot;key&quot;:49,&quot;s&quot;:&quot;mdl&quot;}],&quot;9&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\MenuItem&quot;,&quot;key&quot;:51,&quot;s&quot;:&quot;mdl&quot;}]},{&quot;s&quot;:&quot;arr&quot;}],&quot;8&quot;:[{&quot;10&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\MenuItem&quot;,&quot;key&quot;:52,&quot;s&quot;:&quot;mdl&quot;}]},{&quot;s&quot;:&quot;arr&quot;}]},{&quot;s&quot;:&quot;arr&quot;}],&quot;categories&quot;:[{&quot;11&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Category&quot;,&quot;key&quot;:11,&quot;s&quot;:&quot;mdl&quot;}],&quot;6&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Category&quot;,&quot;key&quot;:6,&quot;s&quot;:&quot;mdl&quot;}],&quot;32&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Category&quot;,&quot;key&quot;:32,&quot;s&quot;:&quot;mdl&quot;}],&quot;47&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Category&quot;,&quot;key&quot;:47,&quot;s&quot;:&quot;mdl&quot;}],&quot;48&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Category&quot;,&quot;key&quot;:48,&quot;s&quot;:&quot;mdl&quot;}],&quot;8&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Category&quot;,&quot;key&quot;:8,&quot;s&quot;:&quot;mdl&quot;}]},{&quot;s&quot;:&quot;arr&quot;}],&quot;other_products&quot;:[{&quot;0&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\MenuItem&quot;,&quot;key&quot;:28,&quot;s&quot;:&quot;mdl&quot;}],&quot;11&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\MenuItem&quot;,&quot;key&quot;:55,&quot;s&quot;:&quot;mdl&quot;}]},{&quot;s&quot;:&quot;arr&quot;}],&quot;restaurant&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Restaurant&quot;,&quot;key&quot;:8,&quot;s&quot;:&quot;mdl&quot;}],&quot;menu_item&quot;:null,&quot;menu_id&quot;:0,&quot;variations&quot;:null,&quot;options&quot;:null,&quot;instructions&quot;:null,&quot;quantity&quot;:1,&quot;restaurant_id&quot;:null},&quot;memo&quot;:{&quot;id&quot;:&quot;XEFOZLbp26xYBr6zFedb&quot;,&quot;name&quot;:&quot;show-page&quot;,&quot;path&quot;:&quot;restaurant\/the-salad-god&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;bn&quot;},&quot;checksum&quot;:&quot;b5d856f1aa005098d5190139af2b657950fac9df98b285104b8286e4ccdc0d36&quot;}" wire:effects="[]" wire:id="XEFOZLbp26xYBr6zFedb" class="">
+
+        <!--[if BLOCK]><![endif]-->        <!--[if BLOCK]><![endif]-->            <div wire:ignore="" wire:key="11" id="listing_product11">
+                <div class="product-category" id="popular-items11">
+                    <!--[if BLOCK]><![endif]-->                        <h3 class="product-category-title">Bam! Snacks </h3>
+                    <!--[if ENDBLOCK]><![endif]-->
+                    <div class="product-card-groupp">
+                        <div class="row gx-3 gy-3">
+                            <!--[if BLOCK]><![endif]-->                                <!--[if BLOCK]><![endif]-->                                    <div class="col-md-6 " wire:key="31">
+                                        <div class="product-card">
+                                            <figure class="product-card-media d-flex justify-content-center align-items-center">
+
+                                                <img data-src="https://demo.food-bank.xyz/frontend/images/default/menuitem.png" class="lazy" alt="product">
+
+                                                <div class="loader-container">
+                                                    <img src="../frontend/images/default/loader.gif" class="loader" alt="loading">
+                                                </div>
+                                            </figure>
+
+                                            <div class="product-card-content">
+
+                                                <!--[if BLOCK]><![endif]-->                                                    <h4 class="product-card-title showClosedNotification">
+                                                        Mixed Greens Medley
+                                                    </h4>
+                                                <!--[if ENDBLOCK]><![endif]-->
+
+                                                <p class="product-card-text">
+                                                    A refreshing twist on the classic cola, infused with the sweet and bol...
+                                                </p>
+
+                                                <div class="product-card-info">
+                                                    <div class="product-card-price">
+                                                        <!--[if BLOCK]><![endif]-->                                                            <span>
+                                                                $5.5
+                                                            </span>
+                                                        <!--[if ENDBLOCK]><![endif]-->
+                                                    </div>
+
+
+                                                    <!--[if BLOCK]><![endif]-->                                                        <button class="product-card-add showClosedNotification">
+                                                            <svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M11.6433 5.22689C11.2525 4.79523 10.6633 4.54439 9.84668 4.45689V4.01356C9.84668 3.21439 9.50835 2.44439 8.91335 1.90773C8.31251 1.35939 7.53085 1.10273 6.72001 1.17856C5.32585 1.31273 4.15335 2.66023 4.15335 4.11856V4.45689C3.33668 4.54439 2.74751 4.79523 2.35668 5.22689C1.79085 5.85689 1.80835 6.69689 1.87251 7.28023L2.28085 10.5294C2.40335 11.6669 2.86418 12.8336 5.37251 12.8336H8.62751C11.1358 12.8336 11.5967 11.6669 11.7192 10.5352L12.1275 7.27439C12.1917 6.69689 12.2033 5.85689 11.6433 5.22689ZM6.80168 1.98939C7.38501 1.93689 7.93918 2.11773 8.37085 2.50856C8.79668 2.89356 9.03585 3.44189 9.03585 4.01356V4.42189H4.96418V4.11856C4.96418 3.08023 5.82168 2.08273 6.80168 1.98939ZM4.91168 7.67106H4.90585C4.58501 7.67106 4.32251 7.40856 4.32251 7.08773C4.32251 6.76689 4.58501 6.50439 4.90585 6.50439C5.23251 6.50439 5.49501 6.76689 5.49501 7.08773C5.49501 7.40856 5.23251 7.67106 4.91168 7.67106ZM8.99501 7.67106H8.98918C8.66835 7.67106 8.40585 7.40856 8.40585 7.08773C8.40585 6.76689 8.66835 6.50439 8.98918 6.50439C9.31585 6.50439 9.57835 6.76689 9.57835 7.08773C9.57835 7.40856 9.31585 7.67106 8.99501 7.67106Z"></path>
+                                                            </svg>
+                                                            <span>যুক্ত করুন</span>
+                                                        </button>
+                                                    <!--[if ENDBLOCK]><![endif]-->
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                    <div class="col-md-6 " wire:key="41">
+                                        <div class="product-card">
+                                            <figure class="product-card-media d-flex justify-content-center align-items-center">
+
+                                                <img data-src="https://demo.food-bank.xyz/storage/118/conversions/caprese-salad-image.jpg" class="lazy" alt="product">
+
+                                                <div class="loader-container">
+                                                    <img src="../frontend/images/default/loader.gif" class="loader" alt="loading">
+                                                </div>
+                                            </figure>
+
+                                            <div class="product-card-content">
+
+                                                <!--[if BLOCK]><![endif]-->                                                    <h4 class="product-card-title showClosedNotification">
+                                                        Caprese Salad
+                                                    </h4>
+                                                <!--[if ENDBLOCK]><![endif]-->
+
+                                                <p class="product-card-text">
+                                                    A refreshing twist on the classic cola, infused with the sweet and bol...
+                                                </p>
+
+                                                <div class="product-card-info">
+                                                    <div class="product-card-price">
+                                                        <!--[if BLOCK]><![endif]-->                                                            <span>
+                                                                $5.99
+                                                            </span>
+                                                        <!--[if ENDBLOCK]><![endif]-->
+                                                    </div>
+
+
+                                                    <!--[if BLOCK]><![endif]-->                                                        <button class="product-card-add showClosedNotification">
+                                                            <svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M11.6433 5.22689C11.2525 4.79523 10.6633 4.54439 9.84668 4.45689V4.01356C9.84668 3.21439 9.50835 2.44439 8.91335 1.90773C8.31251 1.35939 7.53085 1.10273 6.72001 1.17856C5.32585 1.31273 4.15335 2.66023 4.15335 4.11856V4.45689C3.33668 4.54439 2.74751 4.79523 2.35668 5.22689C1.79085 5.85689 1.80835 6.69689 1.87251 7.28023L2.28085 10.5294C2.40335 11.6669 2.86418 12.8336 5.37251 12.8336H8.62751C11.1358 12.8336 11.5967 11.6669 11.7192 10.5352L12.1275 7.27439C12.1917 6.69689 12.2033 5.85689 11.6433 5.22689ZM6.80168 1.98939C7.38501 1.93689 7.93918 2.11773 8.37085 2.50856C8.79668 2.89356 9.03585 3.44189 9.03585 4.01356V4.42189H4.96418V4.11856C4.96418 3.08023 5.82168 2.08273 6.80168 1.98939ZM4.91168 7.67106H4.90585C4.58501 7.67106 4.32251 7.40856 4.32251 7.08773C4.32251 6.76689 4.58501 6.50439 4.90585 6.50439C5.23251 6.50439 5.49501 6.76689 5.49501 7.08773C5.49501 7.40856 5.23251 7.67106 4.91168 7.67106ZM8.99501 7.67106H8.98918C8.66835 7.67106 8.40585 7.40856 8.40585 7.08773C8.40585 6.76689 8.66835 6.50439 8.98918 6.50439C9.31585 6.50439 9.57835 6.76689 9.57835 7.08773C9.57835 7.40856 9.31585 7.67106 8.99501 7.67106Z"></path>
+                                                            </svg>
+                                                            <span>যুক্ত করুন</span>
+                                                        </button>
+                                                    <!--[if ENDBLOCK]><![endif]-->
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                    <div class="col-md-6 " wire:key="46">
+                                        <div class="product-card">
+                                            <figure class="product-card-media d-flex justify-content-center align-items-center">
+
+                                                <img data-src="https://demo.food-bank.xyz/storage/123/conversions/southwest-chipotle-chicken-salad-image.jpg" class="lazy" alt="product">
+
+                                                <div class="loader-container">
+                                                    <img src="../frontend/images/default/loader.gif" class="loader" alt="loading">
+                                                </div>
+                                            </figure>
+
+                                            <div class="product-card-content">
+
+                                                <!--[if BLOCK]><![endif]-->                                                    <h4 class="product-card-title showClosedNotification">
+                                                        Southwest Chipotle C...
+                                                    </h4>
+                                                <!--[if ENDBLOCK]><![endif]-->
+
+                                                <p class="product-card-text">
+                                                    A refreshing twist on the classic cola, infused with the sweet and bol...
+                                                </p>
+
+                                                <div class="product-card-info">
+                                                    <div class="product-card-price">
+                                                        <!--[if BLOCK]><![endif]-->                                                            <span>
+                                                                $3.99
+                                                            </span>
+                                                        <!--[if ENDBLOCK]><![endif]-->
+                                                    </div>
+
+
+                                                    <!--[if BLOCK]><![endif]-->                                                        <button class="product-card-add showClosedNotification">
+                                                            <svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M11.6433 5.22689C11.2525 4.79523 10.6633 4.54439 9.84668 4.45689V4.01356C9.84668 3.21439 9.50835 2.44439 8.91335 1.90773C8.31251 1.35939 7.53085 1.10273 6.72001 1.17856C5.32585 1.31273 4.15335 2.66023 4.15335 4.11856V4.45689C3.33668 4.54439 2.74751 4.79523 2.35668 5.22689C1.79085 5.85689 1.80835 6.69689 1.87251 7.28023L2.28085 10.5294C2.40335 11.6669 2.86418 12.8336 5.37251 12.8336H8.62751C11.1358 12.8336 11.5967 11.6669 11.7192 10.5352L12.1275 7.27439C12.1917 6.69689 12.2033 5.85689 11.6433 5.22689ZM6.80168 1.98939C7.38501 1.93689 7.93918 2.11773 8.37085 2.50856C8.79668 2.89356 9.03585 3.44189 9.03585 4.01356V4.42189H4.96418V4.11856C4.96418 3.08023 5.82168 2.08273 6.80168 1.98939ZM4.91168 7.67106H4.90585C4.58501 7.67106 4.32251 7.40856 4.32251 7.08773C4.32251 6.76689 4.58501 6.50439 4.90585 6.50439C5.23251 6.50439 5.49501 6.76689 5.49501 7.08773C5.49501 7.40856 5.23251 7.67106 4.91168 7.67106ZM8.99501 7.67106H8.98918C8.66835 7.67106 8.40585 7.40856 8.40585 7.08773C8.40585 6.76689 8.66835 6.50439 8.98918 6.50439C9.31585 6.50439 9.57835 6.76689 9.57835 7.08773C9.57835 7.40856 9.31585 7.67106 8.99501 7.67106Z"></path>
+                                                            </svg>
+                                                            <span>যুক্ত করুন</span>
+                                                        </button>
+                                                    <!--[if ENDBLOCK]><![endif]-->
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                    <div class="col-md-6 " wire:key="47">
+                                        <div class="product-card">
+                                            <figure class="product-card-media d-flex justify-content-center align-items-center">
+
+                                                <img data-src="https://demo.food-bank.xyz/storage/124/conversions/asian-sesame-tofu-bowl-image.jpg" class="lazy" alt="product">
+
+                                                <div class="loader-container">
+                                                    <img src="../frontend/images/default/loader.gif" class="loader" alt="loading">
+                                                </div>
+                                            </figure>
+
+                                            <div class="product-card-content">
+
+                                                <!--[if BLOCK]><![endif]-->                                                    <h4 class="product-card-title showClosedNotification">
+                                                        Asian Sesame Tofu Bo...
+                                                    </h4>
+                                                <!--[if ENDBLOCK]><![endif]-->
+
+                                                <p class="product-card-text">
+                                                    A refreshing twist on the classic cola, infused with the sweet and bol...
+                                                </p>
+
+                                                <div class="product-card-info">
+                                                    <div class="product-card-price">
+                                                        <!--[if BLOCK]><![endif]-->                                                            <span>
+                                                                $6.99
+                                                            </span>
+                                                        <!--[if ENDBLOCK]><![endif]-->
+                                                    </div>
+
+
+                                                    <!--[if BLOCK]><![endif]-->                                                        <button class="product-card-add showClosedNotification">
+                                                            <svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M11.6433 5.22689C11.2525 4.79523 10.6633 4.54439 9.84668 4.45689V4.01356C9.84668 3.21439 9.50835 2.44439 8.91335 1.90773C8.31251 1.35939 7.53085 1.10273 6.72001 1.17856C5.32585 1.31273 4.15335 2.66023 4.15335 4.11856V4.45689C3.33668 4.54439 2.74751 4.79523 2.35668 5.22689C1.79085 5.85689 1.80835 6.69689 1.87251 7.28023L2.28085 10.5294C2.40335 11.6669 2.86418 12.8336 5.37251 12.8336H8.62751C11.1358 12.8336 11.5967 11.6669 11.7192 10.5352L12.1275 7.27439C12.1917 6.69689 12.2033 5.85689 11.6433 5.22689ZM6.80168 1.98939C7.38501 1.93689 7.93918 2.11773 8.37085 2.50856C8.79668 2.89356 9.03585 3.44189 9.03585 4.01356V4.42189H4.96418V4.11856C4.96418 3.08023 5.82168 2.08273 6.80168 1.98939ZM4.91168 7.67106H4.90585C4.58501 7.67106 4.32251 7.40856 4.32251 7.08773C4.32251 6.76689 4.58501 6.50439 4.90585 6.50439C5.23251 6.50439 5.49501 6.76689 5.49501 7.08773C5.49501 7.40856 5.23251 7.67106 4.91168 7.67106ZM8.99501 7.67106H8.98918C8.66835 7.67106 8.40585 7.40856 8.40585 7.08773C8.40585 6.76689 8.66835 6.50439 8.98918 6.50439C9.31585 6.50439 9.57835 6.76689 9.57835 7.08773C9.57835 7.40856 9.31585 7.67106 8.99501 7.67106Z"></path>
+                                                            </svg>
+                                                            <span>যুক্ত করুন</span>
+                                                        </button>
+                                                    <!--[if ENDBLOCK]><![endif]-->
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <!--[if ENDBLOCK]><![endif]-->
+                            <!--[if ENDBLOCK]><![endif]-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    <div wire:ignore="" wire:key="6" id="listing_product6">
+                <div class="product-category" id="popular-items6">
+                    <!--[if BLOCK]><![endif]-->                        <h3 class="product-category-title">Specialties </h3>
+                    <!--[if ENDBLOCK]><![endif]-->
+                    <div class="product-card-groupp">
+                        <div class="row gx-3 gy-3">
+                            <!--[if BLOCK]><![endif]-->                                <!--[if BLOCK]><![endif]-->                                    <div class="col-md-6 " wire:key="36">
+                                        <div class="product-card">
+                                            <figure class="product-card-media d-flex justify-content-center align-items-center">
+
+                                                <img data-src="https://demo.food-bank.xyz/storage/113/conversions/quinoa-and-roasted-veggie-bowl-image.jpg" class="lazy" alt="product">
+
+                                                <div class="loader-container">
+                                                    <img src="../frontend/images/default/loader.gif" class="loader" alt="loading">
+                                                </div>
+                                            </figure>
+
+                                            <div class="product-card-content">
+
+                                                <!--[if BLOCK]><![endif]-->                                                    <h4 class="product-card-title showClosedNotification">
+                                                        Quinoa and Roasted V...
+                                                    </h4>
+                                                <!--[if ENDBLOCK]><![endif]-->
+
+                                                <p class="product-card-text">
+                                                    A refreshing twist on the classic cola, infused with the sweet and bol...
+                                                </p>
+
+                                                <div class="product-card-info">
+                                                    <div class="product-card-price">
+                                                        <!--[if BLOCK]><![endif]-->                                                            <span>
+                                                                $3.99
+                                                            </span>
+                                                        <!--[if ENDBLOCK]><![endif]-->
+                                                    </div>
+
+
+                                                    <!--[if BLOCK]><![endif]-->                                                        <button class="product-card-add showClosedNotification">
+                                                            <svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M11.6433 5.22689C11.2525 4.79523 10.6633 4.54439 9.84668 4.45689V4.01356C9.84668 3.21439 9.50835 2.44439 8.91335 1.90773C8.31251 1.35939 7.53085 1.10273 6.72001 1.17856C5.32585 1.31273 4.15335 2.66023 4.15335 4.11856V4.45689C3.33668 4.54439 2.74751 4.79523 2.35668 5.22689C1.79085 5.85689 1.80835 6.69689 1.87251 7.28023L2.28085 10.5294C2.40335 11.6669 2.86418 12.8336 5.37251 12.8336H8.62751C11.1358 12.8336 11.5967 11.6669 11.7192 10.5352L12.1275 7.27439C12.1917 6.69689 12.2033 5.85689 11.6433 5.22689ZM6.80168 1.98939C7.38501 1.93689 7.93918 2.11773 8.37085 2.50856C8.79668 2.89356 9.03585 3.44189 9.03585 4.01356V4.42189H4.96418V4.11856C4.96418 3.08023 5.82168 2.08273 6.80168 1.98939ZM4.91168 7.67106H4.90585C4.58501 7.67106 4.32251 7.40856 4.32251 7.08773C4.32251 6.76689 4.58501 6.50439 4.90585 6.50439C5.23251 6.50439 5.49501 6.76689 5.49501 7.08773C5.49501 7.40856 5.23251 7.67106 4.91168 7.67106ZM8.99501 7.67106H8.98918C8.66835 7.67106 8.40585 7.40856 8.40585 7.08773C8.40585 6.76689 8.66835 6.50439 8.98918 6.50439C9.31585 6.50439 9.57835 6.76689 9.57835 7.08773C9.57835 7.40856 9.31585 7.67106 8.99501 7.67106Z"></path>
+                                                            </svg>
+                                                            <span>যুক্ত করুন</span>
+                                                        </button>
+                                                    <!--[if ENDBLOCK]><![endif]-->
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <!--[if ENDBLOCK]><![endif]-->
+                            <!--[if ENDBLOCK]><![endif]-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    <div wire:ignore="" wire:key="32" id="listing_product32">
+                <div class="product-category" id="popular-items32">
+                    <!--[if BLOCK]><![endif]-->                        <h3 class="product-category-title">Iced Teas </h3>
+                    <!--[if ENDBLOCK]><![endif]-->
+                    <div class="product-card-groupp">
+                        <div class="row gx-3 gy-3">
+                            <!--[if BLOCK]><![endif]-->                                <!--[if BLOCK]><![endif]-->                                    <div class="col-md-6 " wire:key="37">
+                                        <div class="product-card">
+                                            <figure class="product-card-media d-flex justify-content-center align-items-center">
+
+                                                <img data-src="https://demo.food-bank.xyz/storage/114/conversions/harvest-chicken-salad-image.jpg" class="lazy" alt="product">
+
+                                                <div class="loader-container">
+                                                    <img src="../frontend/images/default/loader.gif" class="loader" alt="loading">
+                                                </div>
+                                            </figure>
+
+                                            <div class="product-card-content">
+
+                                                <!--[if BLOCK]><![endif]-->                                                    <h4 class="product-card-title showClosedNotification">
+                                                        Harvest Chicken Sala...
+                                                    </h4>
+                                                <!--[if ENDBLOCK]><![endif]-->
+
+                                                <p class="product-card-text">
+                                                    A refreshing twist on the classic cola, infused with the sweet and bol...
+                                                </p>
+
+                                                <div class="product-card-info">
+                                                    <div class="product-card-price">
+                                                        <!--[if BLOCK]><![endif]-->                                                            <span>
+                                                                $5.5
+                                                            </span>
+                                                        <!--[if ENDBLOCK]><![endif]-->
+                                                    </div>
+
+
+                                                    <!--[if BLOCK]><![endif]-->                                                        <button class="product-card-add showClosedNotification">
+                                                            <svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M11.6433 5.22689C11.2525 4.79523 10.6633 4.54439 9.84668 4.45689V4.01356C9.84668 3.21439 9.50835 2.44439 8.91335 1.90773C8.31251 1.35939 7.53085 1.10273 6.72001 1.17856C5.32585 1.31273 4.15335 2.66023 4.15335 4.11856V4.45689C3.33668 4.54439 2.74751 4.79523 2.35668 5.22689C1.79085 5.85689 1.80835 6.69689 1.87251 7.28023L2.28085 10.5294C2.40335 11.6669 2.86418 12.8336 5.37251 12.8336H8.62751C11.1358 12.8336 11.5967 11.6669 11.7192 10.5352L12.1275 7.27439C12.1917 6.69689 12.2033 5.85689 11.6433 5.22689ZM6.80168 1.98939C7.38501 1.93689 7.93918 2.11773 8.37085 2.50856C8.79668 2.89356 9.03585 3.44189 9.03585 4.01356V4.42189H4.96418V4.11856C4.96418 3.08023 5.82168 2.08273 6.80168 1.98939ZM4.91168 7.67106H4.90585C4.58501 7.67106 4.32251 7.40856 4.32251 7.08773C4.32251 6.76689 4.58501 6.50439 4.90585 6.50439C5.23251 6.50439 5.49501 6.76689 5.49501 7.08773C5.49501 7.40856 5.23251 7.67106 4.91168 7.67106ZM8.99501 7.67106H8.98918C8.66835 7.67106 8.40585 7.40856 8.40585 7.08773C8.40585 6.76689 8.66835 6.50439 8.98918 6.50439C9.31585 6.50439 9.57835 6.76689 9.57835 7.08773C9.57835 7.40856 9.31585 7.67106 8.99501 7.67106Z"></path>
+                                                            </svg>
+                                                            <span>যুক্ত করুন</span>
+                                                        </button>
+                                                    <!--[if ENDBLOCK]><![endif]-->
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <!--[if ENDBLOCK]><![endif]-->
+                            <!--[if ENDBLOCK]><![endif]-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    <div wire:ignore="" wire:key="47" id="listing_product47">
+                <div class="product-category" id="popular-items47">
+                    <!--[if BLOCK]><![endif]-->                        <h3 class="product-category-title">Vibrant Veggie Delights </h3>
+                    <!--[if ENDBLOCK]><![endif]-->
+                    <div class="product-card-groupp">
+                        <div class="row gx-3 gy-3">
+                            <!--[if BLOCK]><![endif]-->                                <!--[if BLOCK]><![endif]-->                                    <div class="col-md-6 " wire:key="43">
+                                        <div class="product-card">
+                                            <figure class="product-card-media d-flex justify-content-center align-items-center">
+
+                                                <img data-src="https://demo.food-bank.xyz/storage/120/conversions/greek-village-salad-image.jpg" class="lazy" alt="product">
+
+                                                <div class="loader-container">
+                                                    <img src="../frontend/images/default/loader.gif" class="loader" alt="loading">
+                                                </div>
+                                            </figure>
+
+                                            <div class="product-card-content">
+
+                                                <!--[if BLOCK]><![endif]-->                                                    <h4 class="product-card-title showClosedNotification">
+                                                        Greek Village Salad
+                                                    </h4>
+                                                <!--[if ENDBLOCK]><![endif]-->
+
+                                                <p class="product-card-text">
+                                                    A refreshing twist on the classic cola, infused with the sweet and bol...
+                                                </p>
+
+                                                <div class="product-card-info">
+                                                    <div class="product-card-price">
+                                                        <!--[if BLOCK]><![endif]-->                                                            <del>$7.00
+                                                            </del>
+                                                            <span>
+                                                                $4.99
+                                                            </span>
+                                                        <!--[if ENDBLOCK]><![endif]-->
+                                                    </div>
+
+
+                                                    <!--[if BLOCK]><![endif]-->                                                        <button class="product-card-add showClosedNotification">
+                                                            <svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M11.6433 5.22689C11.2525 4.79523 10.6633 4.54439 9.84668 4.45689V4.01356C9.84668 3.21439 9.50835 2.44439 8.91335 1.90773C8.31251 1.35939 7.53085 1.10273 6.72001 1.17856C5.32585 1.31273 4.15335 2.66023 4.15335 4.11856V4.45689C3.33668 4.54439 2.74751 4.79523 2.35668 5.22689C1.79085 5.85689 1.80835 6.69689 1.87251 7.28023L2.28085 10.5294C2.40335 11.6669 2.86418 12.8336 5.37251 12.8336H8.62751C11.1358 12.8336 11.5967 11.6669 11.7192 10.5352L12.1275 7.27439C12.1917 6.69689 12.2033 5.85689 11.6433 5.22689ZM6.80168 1.98939C7.38501 1.93689 7.93918 2.11773 8.37085 2.50856C8.79668 2.89356 9.03585 3.44189 9.03585 4.01356V4.42189H4.96418V4.11856C4.96418 3.08023 5.82168 2.08273 6.80168 1.98939ZM4.91168 7.67106H4.90585C4.58501 7.67106 4.32251 7.40856 4.32251 7.08773C4.32251 6.76689 4.58501 6.50439 4.90585 6.50439C5.23251 6.50439 5.49501 6.76689 5.49501 7.08773C5.49501 7.40856 5.23251 7.67106 4.91168 7.67106ZM8.99501 7.67106H8.98918C8.66835 7.67106 8.40585 7.40856 8.40585 7.08773C8.40585 6.76689 8.66835 6.50439 8.98918 6.50439C9.31585 6.50439 9.57835 6.76689 9.57835 7.08773C9.57835 7.40856 9.31585 7.67106 8.99501 7.67106Z"></path>
+                                                            </svg>
+                                                            <span>যুক্ত করুন</span>
+                                                        </button>
+                                                    <!--[if ENDBLOCK]><![endif]-->
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <!--[if ENDBLOCK]><![endif]-->
+                            <!--[if ENDBLOCK]><![endif]-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    <div wire:ignore="" wire:key="48" id="listing_product48">
+                <div class="product-category" id="popular-items48">
+                    <!--[if BLOCK]><![endif]-->                        <h3 class="product-category-title">Nutrient-Packed Power Bowls </h3>
+                    <!--[if ENDBLOCK]><![endif]-->
+                    <div class="product-card-groupp">
+                        <div class="row gx-3 gy-3">
+                            <!--[if BLOCK]><![endif]-->                                <!--[if BLOCK]><![endif]-->                                    <div class="col-md-6 " wire:key="49">
+                                        <div class="product-card">
+                                            <figure class="product-card-media d-flex justify-content-center align-items-center">
+
+                                                <img data-src="https://demo.food-bank.xyz/storage/126/conversions/salmon-superfood-bowl-image.jpg" class="lazy" alt="product">
+
+                                                <div class="loader-container">
+                                                    <img src="../frontend/images/default/loader.gif" class="loader" alt="loading">
+                                                </div>
+                                            </figure>
+
+                                            <div class="product-card-content">
+
+                                                <!--[if BLOCK]><![endif]-->                                                    <h4 class="product-card-title showClosedNotification">
+                                                        Salmon Superfood Bow...
+                                                    </h4>
+                                                <!--[if ENDBLOCK]><![endif]-->
+
+                                                <p class="product-card-text">
+                                                    A refreshing twist on the classic cola, infused with the sweet and bol...
+                                                </p>
+
+                                                <div class="product-card-info">
+                                                    <div class="product-card-price">
+                                                        <!--[if BLOCK]><![endif]-->                                                            <del>$12.99
+                                                            </del>
+                                                            <span>
+                                                                $9
+                                                            </span>
+                                                        <!--[if ENDBLOCK]><![endif]-->
+                                                    </div>
+
+
+                                                    <!--[if BLOCK]><![endif]-->                                                        <button class="product-card-add showClosedNotification">
+                                                            <svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M11.6433 5.22689C11.2525 4.79523 10.6633 4.54439 9.84668 4.45689V4.01356C9.84668 3.21439 9.50835 2.44439 8.91335 1.90773C8.31251 1.35939 7.53085 1.10273 6.72001 1.17856C5.32585 1.31273 4.15335 2.66023 4.15335 4.11856V4.45689C3.33668 4.54439 2.74751 4.79523 2.35668 5.22689C1.79085 5.85689 1.80835 6.69689 1.87251 7.28023L2.28085 10.5294C2.40335 11.6669 2.86418 12.8336 5.37251 12.8336H8.62751C11.1358 12.8336 11.5967 11.6669 11.7192 10.5352L12.1275 7.27439C12.1917 6.69689 12.2033 5.85689 11.6433 5.22689ZM6.80168 1.98939C7.38501 1.93689 7.93918 2.11773 8.37085 2.50856C8.79668 2.89356 9.03585 3.44189 9.03585 4.01356V4.42189H4.96418V4.11856C4.96418 3.08023 5.82168 2.08273 6.80168 1.98939ZM4.91168 7.67106H4.90585C4.58501 7.67106 4.32251 7.40856 4.32251 7.08773C4.32251 6.76689 4.58501 6.50439 4.90585 6.50439C5.23251 6.50439 5.49501 6.76689 5.49501 7.08773C5.49501 7.40856 5.23251 7.67106 4.91168 7.67106ZM8.99501 7.67106H8.98918C8.66835 7.67106 8.40585 7.40856 8.40585 7.08773C8.40585 6.76689 8.66835 6.50439 8.98918 6.50439C9.31585 6.50439 9.57835 6.76689 9.57835 7.08773C9.57835 7.40856 9.31585 7.67106 8.99501 7.67106Z"></path>
+                                                            </svg>
+                                                            <span>যুক্ত করুন</span>
+                                                        </button>
+                                                    <!--[if ENDBLOCK]><![endif]-->
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                    <div class="col-md-6 " wire:key="51">
+                                        <div class="product-card">
+                                            <figure class="product-card-media d-flex justify-content-center align-items-center">
+
+                                                <img data-src="https://demo.food-bank.xyz/storage/128/conversions/protein-packed-lentil-salad-image.jpg" class="lazy" alt="product">
+
+                                                <div class="loader-container">
+                                                    <img src="../frontend/images/default/loader.gif" class="loader" alt="loading">
+                                                </div>
+                                            </figure>
+
+                                            <div class="product-card-content">
+
+                                                <!--[if BLOCK]><![endif]-->                                                    <h4 class="product-card-title showClosedNotification">
+                                                        Protein-Packed Lenti...
+                                                    </h4>
+                                                <!--[if ENDBLOCK]><![endif]-->
+
+                                                <p class="product-card-text">
+                                                    A refreshing twist on the classic cola, infused with the sweet and bol...
+                                                </p>
+
+                                                <div class="product-card-info">
+                                                    <div class="product-card-price">
+                                                        <!--[if BLOCK]><![endif]-->                                                            <span>
+                                                                $6.99
+                                                            </span>
+                                                        <!--[if ENDBLOCK]><![endif]-->
+                                                    </div>
+
+
+                                                    <!--[if BLOCK]><![endif]-->                                                        <button class="product-card-add showClosedNotification">
+                                                            <svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M11.6433 5.22689C11.2525 4.79523 10.6633 4.54439 9.84668 4.45689V4.01356C9.84668 3.21439 9.50835 2.44439 8.91335 1.90773C8.31251 1.35939 7.53085 1.10273 6.72001 1.17856C5.32585 1.31273 4.15335 2.66023 4.15335 4.11856V4.45689C3.33668 4.54439 2.74751 4.79523 2.35668 5.22689C1.79085 5.85689 1.80835 6.69689 1.87251 7.28023L2.28085 10.5294C2.40335 11.6669 2.86418 12.8336 5.37251 12.8336H8.62751C11.1358 12.8336 11.5967 11.6669 11.7192 10.5352L12.1275 7.27439C12.1917 6.69689 12.2033 5.85689 11.6433 5.22689ZM6.80168 1.98939C7.38501 1.93689 7.93918 2.11773 8.37085 2.50856C8.79668 2.89356 9.03585 3.44189 9.03585 4.01356V4.42189H4.96418V4.11856C4.96418 3.08023 5.82168 2.08273 6.80168 1.98939ZM4.91168 7.67106H4.90585C4.58501 7.67106 4.32251 7.40856 4.32251 7.08773C4.32251 6.76689 4.58501 6.50439 4.90585 6.50439C5.23251 6.50439 5.49501 6.76689 5.49501 7.08773C5.49501 7.40856 5.23251 7.67106 4.91168 7.67106ZM8.99501 7.67106H8.98918C8.66835 7.67106 8.40585 7.40856 8.40585 7.08773C8.40585 6.76689 8.66835 6.50439 8.98918 6.50439C9.31585 6.50439 9.57835 6.76689 9.57835 7.08773C9.57835 7.40856 9.31585 7.67106 8.99501 7.67106Z"></path>
+                                                            </svg>
+                                                            <span>যুক্ত করুন</span>
+                                                        </button>
+                                                    <!--[if ENDBLOCK]><![endif]-->
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <!--[if ENDBLOCK]><![endif]-->
+                            <!--[if ENDBLOCK]><![endif]-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    <div wire:ignore="" wire:key="8" id="listing_product8">
+                <div class="product-category" id="popular-items8">
+                    <!--[if BLOCK]><![endif]-->                        <h3 class="product-category-title">Featured </h3>
+                    <!--[if ENDBLOCK]><![endif]-->
+                    <div class="product-card-groupp">
+                        <div class="row gx-3 gy-3">
+                            <!--[if BLOCK]><![endif]-->                                <!--[if BLOCK]><![endif]-->                                    <div class="col-md-6 " wire:key="52">
+                                        <div class="product-card">
+                                            <figure class="product-card-media d-flex justify-content-center align-items-center">
+
+                                                <img data-src="https://demo.food-bank.xyz/storage/129/conversions/falafel-and-hummus-plate-image.jpg" class="lazy" alt="product">
+
+                                                <div class="loader-container">
+                                                    <img src="../frontend/images/default/loader.gif" class="loader" alt="loading">
+                                                </div>
+                                            </figure>
+
+                                            <div class="product-card-content">
+
+                                                <!--[if BLOCK]><![endif]-->                                                    <h4 class="product-card-title showClosedNotification">
+                                                        Falafel and Hummus P...
+                                                    </h4>
+                                                <!--[if ENDBLOCK]><![endif]-->
+
+                                                <p class="product-card-text">
+                                                    A refreshing twist on the classic cola, infused with the sweet and bol...
+                                                </p>
+
+                                                <div class="product-card-info">
+                                                    <div class="product-card-price">
+                                                        <!--[if BLOCK]><![endif]-->                                                            <span>
+                                                                $6.5
+                                                            </span>
+                                                        <!--[if ENDBLOCK]><![endif]-->
+                                                    </div>
+
+
+                                                    <!--[if BLOCK]><![endif]-->                                                        <button class="product-card-add showClosedNotification">
+                                                            <svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M11.6433 5.22689C11.2525 4.79523 10.6633 4.54439 9.84668 4.45689V4.01356C9.84668 3.21439 9.50835 2.44439 8.91335 1.90773C8.31251 1.35939 7.53085 1.10273 6.72001 1.17856C5.32585 1.31273 4.15335 2.66023 4.15335 4.11856V4.45689C3.33668 4.54439 2.74751 4.79523 2.35668 5.22689C1.79085 5.85689 1.80835 6.69689 1.87251 7.28023L2.28085 10.5294C2.40335 11.6669 2.86418 12.8336 5.37251 12.8336H8.62751C11.1358 12.8336 11.5967 11.6669 11.7192 10.5352L12.1275 7.27439C12.1917 6.69689 12.2033 5.85689 11.6433 5.22689ZM6.80168 1.98939C7.38501 1.93689 7.93918 2.11773 8.37085 2.50856C8.79668 2.89356 9.03585 3.44189 9.03585 4.01356V4.42189H4.96418V4.11856C4.96418 3.08023 5.82168 2.08273 6.80168 1.98939ZM4.91168 7.67106H4.90585C4.58501 7.67106 4.32251 7.40856 4.32251 7.08773C4.32251 6.76689 4.58501 6.50439 4.90585 6.50439C5.23251 6.50439 5.49501 6.76689 5.49501 7.08773C5.49501 7.40856 5.23251 7.67106 4.91168 7.67106ZM8.99501 7.67106H8.98918C8.66835 7.67106 8.40585 7.40856 8.40585 7.08773C8.40585 6.76689 8.66835 6.50439 8.98918 6.50439C9.31585 6.50439 9.57835 6.76689 9.57835 7.08773C9.57835 7.40856 9.31585 7.67106 8.99501 7.67106Z"></path>
+                                                            </svg>
+                                                            <span>যুক্ত করুন</span>
+                                                        </button>
+                                                    <!--[if ENDBLOCK]><![endif]-->
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <!--[if ENDBLOCK]><![endif]-->
+                            <!--[if ENDBLOCK]><![endif]-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!--[if ENDBLOCK]><![endif]-->
+    <!--[if ENDBLOCK]><![endif]-->
+    <!--[if BLOCK]><![endif]-->        <div wire:ignore="" id="listing_product_other">
+            <div class="product-category" id="popular-items">
+                <h3 class="product-category-title">অন্যান্য </h3>
+                <div class="product-card-groupp">
+                    <div class="row gx-3 gy-3">
+                        <!--[if BLOCK]><![endif]-->                            <div class="col-md-6" wire:key="28">
+                                <div class="product-card">
+                                    <figure class="product-card-media d-flex justify-content-center align-items-center">
+
+                                        <img data-src="https://demo.food-bank.xyz/storage/108/conversions/garden-harvest-salad-image.jpg" class="lazy" alt="product">
+
+                                        <div class="loader-container">
+                                            <img src="../frontend/images/default/loader.gif" class="loader" alt="loading">
+                                        </div>
+                                    </figure>
+                                    <div class="product-card-content">
+                                        <!--[if BLOCK]><![endif]-->                                            <h4 class="product-card-title showClosedNotification">
+                                                Garden Harvest Salad
+                                            </h4>
+                                        <!--[if ENDBLOCK]><![endif]-->
+                                        <p class="product-card-text">
+                                            A refreshing twist on the classic cola, infused with the sweet and bol...
+                                        </p>
+
+                                        <div class="product-card-info">
+                                            <div class="product-card-price">
+                                                <!--[if BLOCK]><![endif]-->                                                    <span>
+                                                        $7.5
+                                                    </span>
+                                                <!--[if ENDBLOCK]><![endif]-->
+                                            </div>
+
+
+                                            <!--[if BLOCK]><![endif]-->                                                <button class="product-card-add showClosedNotification">
+                                                    <svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M11.6433 5.22689C11.2525 4.79523 10.6633 4.54439 9.84668 4.45689V4.01356C9.84668 3.21439 9.50835 2.44439 8.91335 1.90773C8.31251 1.35939 7.53085 1.10273 6.72001 1.17856C5.32585 1.31273 4.15335 2.66023 4.15335 4.11856V4.45689C3.33668 4.54439 2.74751 4.79523 2.35668 5.22689C1.79085 5.85689 1.80835 6.69689 1.87251 7.28023L2.28085 10.5294C2.40335 11.6669 2.86418 12.8336 5.37251 12.8336H8.62751C11.1358 12.8336 11.5967 11.6669 11.7192 10.5352L12.1275 7.27439C12.1917 6.69689 12.2033 5.85689 11.6433 5.22689ZM6.80168 1.98939C7.38501 1.93689 7.93918 2.11773 8.37085 2.50856C8.79668 2.89356 9.03585 3.44189 9.03585 4.01356V4.42189H4.96418V4.11856C4.96418 3.08023 5.82168 2.08273 6.80168 1.98939ZM4.91168 7.67106H4.90585C4.58501 7.67106 4.32251 7.40856 4.32251 7.08773C4.32251 6.76689 4.58501 6.50439 4.90585 6.50439C5.23251 6.50439 5.49501 6.76689 5.49501 7.08773C5.49501 7.40856 5.23251 7.67106 4.91168 7.67106ZM8.99501 7.67106H8.98918C8.66835 7.67106 8.40585 7.40856 8.40585 7.08773C8.40585 6.76689 8.66835 6.50439 8.98918 6.50439C9.31585 6.50439 9.57835 6.76689 9.57835 7.08773C9.57835 7.40856 9.31585 7.67106 8.99501 7.67106Z"></path>
+                                                    </svg>
+                                                    <span>যুক্ত করুন</span>
+                                                </button>
+                                            <!--[if ENDBLOCK]><![endif]-->
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <div class="col-md-6" wire:key="55">
+                                <div class="product-card">
+                                    <figure class="product-card-media d-flex justify-content-center align-items-center">
+
+                                        <img data-src="https://demo.food-bank.xyz/storage/132/conversions/mediterranean-chickpea-salad-image.jpg" class="lazy" alt="product">
+
+                                        <div class="loader-container">
+                                            <img src="../frontend/images/default/loader.gif" class="loader" alt="loading">
+                                        </div>
+                                    </figure>
+                                    <div class="product-card-content">
+                                        <!--[if BLOCK]><![endif]-->                                            <h4 class="product-card-title showClosedNotification">
+                                                Mediterranean Chickp...
+                                            </h4>
+                                        <!--[if ENDBLOCK]><![endif]-->
+                                        <p class="product-card-text">
+                                            A refreshing twist on the classic cola, infused with the sweet and bol...
+                                        </p>
+
+                                        <div class="product-card-info">
+                                            <div class="product-card-price">
+                                                <!--[if BLOCK]><![endif]-->                                                    <span>
+                                                        $4.99
+                                                    </span>
+                                                <!--[if ENDBLOCK]><![endif]-->
+                                            </div>
+
+
+                                            <!--[if BLOCK]><![endif]-->                                                <button class="product-card-add showClosedNotification">
+                                                    <svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M11.6433 5.22689C11.2525 4.79523 10.6633 4.54439 9.84668 4.45689V4.01356C9.84668 3.21439 9.50835 2.44439 8.91335 1.90773C8.31251 1.35939 7.53085 1.10273 6.72001 1.17856C5.32585 1.31273 4.15335 2.66023 4.15335 4.11856V4.45689C3.33668 4.54439 2.74751 4.79523 2.35668 5.22689C1.79085 5.85689 1.80835 6.69689 1.87251 7.28023L2.28085 10.5294C2.40335 11.6669 2.86418 12.8336 5.37251 12.8336H8.62751C11.1358 12.8336 11.5967 11.6669 11.7192 10.5352L12.1275 7.27439C12.1917 6.69689 12.2033 5.85689 11.6433 5.22689ZM6.80168 1.98939C7.38501 1.93689 7.93918 2.11773 8.37085 2.50856C8.79668 2.89356 9.03585 3.44189 9.03585 4.01356V4.42189H4.96418V4.11856C4.96418 3.08023 5.82168 2.08273 6.80168 1.98939ZM4.91168 7.67106H4.90585C4.58501 7.67106 4.32251 7.40856 4.32251 7.08773C4.32251 6.76689 4.58501 6.50439 4.90585 6.50439C5.23251 6.50439 5.49501 6.76689 5.49501 7.08773C5.49501 7.40856 5.23251 7.67106 4.91168 7.67106ZM8.99501 7.67106H8.98918C8.66835 7.67106 8.40585 7.40856 8.40585 7.08773C8.40585 6.76689 8.66835 6.50439 8.98918 6.50439C9.31585 6.50439 9.57835 6.76689 9.57835 7.08773C9.57835 7.40856 9.31585 7.67106 8.99501 7.67106Z"></path>
+                                                    </svg>
+                                                    <span>যুক্ত করুন</span>
+                                                </button>
+                                            <!--[if ENDBLOCK]><![endif]-->
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <!--[if ENDBLOCK]><![endif]-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--[if ENDBLOCK]><![endif]-->
+</div>
+
+                    </div>
+                    <!--======== FOOTER PART START ========-->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-4 col-lg-3">
+                <div class="footer-about">
+                    <a href="../index.htm" class="footer-logo"><img src="../images/seeder/settings/logo.png" alt="logo"></a>
+                    <p> Follow Us on  </p>
+                    <nav>
+                                                    <a href="https://www.facebook.com/inilabs" class="fa-brands fa-facebook-f"></a>
+                                                                            <a href="https://www.instagram.com/inilabs" class="fa-brands fa-instagram"></a>
+                                                                            <a href="https://twitter.com/inilabs" class="fa-brands fa-twitter"></a>
+                                                                            <a href="https://www.youtube.com/inilabs" class="fa-brands fa-youtube"></a>
+                                            </nav>
+                </div>
+            </div>
+            <div class="col-12 col-sm-4 col-lg-3">
+                <div class="footer-widget">
+                    <h5 class="footer-title">সম্পর্কে</h5>
+                    <nav>
+                                                                                                                        <a href="../page/terms-and-condition.html"> Terms &amp; Conditions </a>
+                                                                                                                                                                                                                                                        <a href="../page/contact-us.html"> Contact Us </a>
+                                                                                                        </nav>
+                </div>
+            </div>
+            <div class="col-12 col-sm-4 col-lg-3">
+                <div class="footer-widget">
+                    <h5 class="footer-title"> সেবা </h5>
+                    <nav>
+                                                                                                                                                                                    <a href="../page/about-us.html">About US</a>
+                                                                                                                                <a href="../page/privacy-and-policy.html">Privacy and Policy</a>
+                                                                                                                                                                    </nav>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3">
+                <div class="footer-contact">
+                    <h5 class="footer-title"> Download Apps </h5>
+                    <nav>
+                                                                                    <a href="https://play.google.com/store/apps/details?id=com.inilabs.foodbank" target="_blank" class="d-block mb-2">
+                                    <img src="../frontend/images/play.png" alt="">
+                                </a>
+                                                                                        <a href="https://play.google.com/store/apps/details?id=com.inilabs.foodbank" target="_blank" class="d-block mb-2">
+                                    <img src="../frontend/images/app.png" alt="">
+                                </a>
+                                                                        </nav>
+                    <ul>
+                        <li>
+                            <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.33325 5.66683C1.33325 3.3335 2.66659 2.3335 4.66659 2.3335H11.3333C13.3333 2.3335 14.6666 3.3335 14.6666 5.66683V10.3335C14.6666 12.6668 13.3333 13.6668 11.3333 13.6668H4.66659" stroke="#1F1F39" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M11.3334 6L9.24674 7.66667C8.56008 8.21333 7.43341 8.21333 6.74674 7.66667L4.66675 6" stroke="#1F1F39" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M1.33325 11H5.33325" stroke="#1F1F39" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M1.33325 8.3335H3.33325" stroke="#1F1F39" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                            <span> info@food-bank.xyz </span>
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 6.25C13 4.92392 12.4732 3.65215 11.5355 2.71447C10.5979 1.77678 9.32608 1.25 8 1.25C6.69021 1.24976 5.43263 1.76349 4.49763 2.68072C3.56264 3.59795 3.02489 4.84545 3 6.155C2.60218 6.155 2.22064 6.31304 1.93934 6.59434C1.65804 6.87564 1.5 7.25718 1.5 7.655V9.655C1.5 10.0528 1.65804 10.4344 1.93934 10.7157C2.22064 10.997 2.60218 11.155 3 11.155H4C4.39782 11.155 4.77936 10.997 5.06066 10.7157C5.34196 10.4344 5.5 10.0528 5.5 9.655V7.655C5.5 7.25718 5.34196 6.87564 5.06066 6.59434C4.77936 6.31304 4.39782 6.155 4 6.155C4.02481 5.11069 4.45716 4.11751 5.20464 3.38779C5.95211 2.65807 6.95539 2.24971 8 2.25C9.06087 2.25 10.0783 2.67143 10.8284 3.42157C11.5786 4.17172 12 5.18913 12 6.25C11.6022 6.25 11.2206 6.40804 10.9393 6.68934C10.658 6.97064 10.5 7.35218 10.5 7.75V9.75C10.5013 10.0806 10.6119 10.4015 10.8144 10.6628C11.017 10.9242 11.3002 11.1112 11.62 11.195C11.242 11.8817 10.6103 12.3932 9.86 12.62C9.73986 12.3604 9.54799 12.1406 9.30703 11.9864C9.06607 11.8323 8.78605 11.7502 8.5 11.75H7.5C7.10218 11.75 6.72064 11.908 6.43934 12.1893C6.15804 12.4706 6 12.8522 6 13.25C6 13.6478 6.15804 14.0294 6.43934 14.3107C6.72064 14.592 7.10218 14.75 7.5 14.75H8.5C8.83128 14.7484 9.1527 14.6371 9.4141 14.4336C9.67551 14.2301 9.86218 13.9458 9.945 13.625C10.5592 13.475 11.1292 13.1816 11.6081 12.7688C12.087 12.3559 12.4612 11.8354 12.7 11.25H13C13.3978 11.25 13.7794 11.092 14.0607 10.8107C14.342 10.5294 14.5 10.1478 14.5 9.75V7.75C14.5 7.35218 14.342 6.97064 14.0607 6.68934C13.7794 6.40804 13.3978 6.25 13 6.25ZM4.5 7.655V9.655C4.5 9.78761 4.44732 9.91479 4.35355 10.0086C4.25979 10.1023 4.13261 10.155 4 10.155H3C2.86739 10.155 2.74021 10.1023 2.64645 10.0086C2.55268 9.91479 2.5 9.78761 2.5 9.655V7.655C2.5 7.52239 2.55268 7.39521 2.64645 7.30145C2.74021 7.20768 2.86739 7.155 3 7.155H4C4.13261 7.155 4.25979 7.20768 4.35355 7.30145C4.44732 7.39521 4.5 7.52239 4.5 7.655ZM8.5 13.75H7.5C7.36739 13.75 7.24021 13.6973 7.14645 13.6036C7.05268 13.5098 7 13.3826 7 13.25C7 13.1174 7.05268 12.9902 7.14645 12.8964C7.24021 12.8027 7.36739 12.75 7.5 12.75H8.5C8.63261 12.75 8.75979 12.8027 8.85355 12.8964C8.94732 12.9902 9 13.1174 9 13.25C9 13.3826 8.94732 13.5098 8.85355 13.6036C8.75979 13.6973 8.63261 13.75 8.5 13.75ZM13.5 9.75C13.5 9.88261 13.4473 10.0098 13.3536 10.1036C13.2598 10.1973 13.1326 10.25 13 10.25H12C11.8674 10.25 11.7402 10.1973 11.6464 10.1036C11.5527 10.0098 11.5 9.88261 11.5 9.75V7.75C11.5 7.61739 11.5527 7.49021 11.6464 7.39645C11.7402 7.30268 11.8674 7.25 12 7.25H13C13.1326 7.25 13.2598 7.30268 13.3536 7.39645C13.4473 7.49021 13.5 7.61739 13.5 7.75V9.75Z" fill="#1F1F39"></path>
+                            </svg>
+                            <span> +8801777664555 </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>@ All Rights Reserved</p>
+    </div>
+</footer>
+<!--======= FOOTER PART END =========-->
+                 </div>
+
+                <!--=======  Side bar card ========-->
+                <aside class="cart-sidebar active">
+                    <div class="cart-content">
+                        <button class="cart-close fa-solid fa-xmark" type="button"></button>
+                        <div wire:snapshot="{&quot;data&quot;:{&quot;carts&quot;:null,&quot;totalQty&quot;:0,&quot;totalItem&quot;:0,&quot;totalAmount&quot;:0,&quot;subTotalAmount&quot;:0,&quot;delivery_charge&quot;:0,&quot;totalPayAmount&quot;:0,&quot;restaurant&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Restaurant&quot;,&quot;key&quot;:8,&quot;s&quot;:&quot;mdl&quot;}],&quot;totalItemQtyAmount&quot;:null,&quot;totalItemQty&quot;:null,&quot;qty&quot;:1,&quot;coupon&quot;:&quot;&quot;,&quot;discountAmount&quot;:0,&quot;min_order&quot;:0,&quot;max_order&quot;:0,&quot;msg&quot;:&quot;&quot;,&quot;couponID&quot;:0,&quot;delivery_type&quot;:null,&quot;free_delivery&quot;:null,&quot;isActive&quot;:false,&quot;isActiveCheckout&quot;:true},&quot;memo&quot;:{&quot;id&quot;:&quot;73elcuiGrt0tYaMkvPxy&quot;,&quot;name&quot;:&quot;order-cart&quot;,&quot;path&quot;:&quot;restaurant\/the-salad-god&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;bn&quot;},&quot;checksum&quot;:&quot;93b2442f393882b995d5d239daab09752b8ae56f440f4b72fe90b569a274afc4&quot;}" wire:effects="{&quot;listeners&quot;:[&quot;addCart&quot;]}" wire:id="73elcuiGrt0tYaMkvPxy">
+
+    <!--[if BLOCK]><![endif]-->        <!--~~~~~  WHEN CART IS EMPTY CODE START ~~~~~~-->
+        <div class="cart-empty">
+            <h2 class="cart-title">আমার কার্ট
+                (<span class="cartCount" id="carTNumber">
+                    <!--[if BLOCK]><![endif]-->                        0
+                    <!--[if ENDBLOCK]><![endif]-->
+                </span>)
+            </h2>
+            <img src="../frontend/images/gif/empty.gif" alt="gif">
+            <p> ভাল খাবার সবসময় রান্না করা হচ্ছে! যোগ্য আইটেমগুলি অর্ডার করুন। </p>
+        </div>
+        <!--~~~~ WHEN CART IS EMPTY CODE END ~~~~~~-->
+    <!--[if ENDBLOCK]><![endif]-->
+</div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+    <!--=======  RESTAURANT PART END ========-->
+
+    <!--======= Add to Cart Modal Start  ========-->
+    <div wire:snapshot="{&quot;data&quot;:{&quot;restaurant&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Restaurant&quot;,&quot;key&quot;:8,&quot;s&quot;:&quot;mdl&quot;}],&quot;menuItem&quot;:null,&quot;quantity&quot;:1,&quot;menu_id&quot;:null,&quot;restaurant_id&quot;:null,&quot;variationID&quot;:null,&quot;options&quot;:[[],{&quot;s&quot;:&quot;arr&quot;}],&quot;instructions&quot;:null},&quot;memo&quot;:{&quot;id&quot;:&quot;VJybCLJ3rIiiLXkTpeJw&quot;,&quot;name&quot;:&quot;show-cart&quot;,&quot;path&quot;:&quot;restaurant\/the-salad-god&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;bn&quot;},&quot;checksum&quot;:&quot;4021a691333c793e54b582f24a5d36cb29c98829adb9604d3718502b6bcc561d&quot;}" wire:effects="{&quot;listeners&quot;:[&quot;CartModal&quot;]}" wire:id="VJybCLJ3rIiiLXkTpeJw">
+    <!--======= PRODUCT MODAL PART START ========-->
+    <div wire:ignore.self="" class="modal fade product-modal" id="cartModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+            </div>
+        </div>
+    </div>
+    <!--======= PRODUCT MODAL PART END =====-->
+</div>
+
+
+    <!--====== Table BOOKING MODAL START =========-->
+    <div class="modal fade booking-modal" id="booking-modal" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="booking-modal-header">
+                    <button class="fa-regular fa-circle-xmark" type="button" data-bs-dismiss="modal"></button>
+                    <h3>টেবিল বুকিং </h3>
+                    <img src="../frontend/images/gif/table.gif" alt="gif">
+                </div>
+                
+                <form action="https://demo.food-bank.xyz/reservation/booking" class="bookForm" method="GET">
+                    <input type="hidden" name="restaurant_id" id="restaurant_id" value="8">
+                    <div class="booking-modal-content">
+                        <div class="booking-modal-group">
+                            <div class="booking-modal-select">
+                                <h4><span> একটি তারিখ নির্বাচন করুন </span>
+                                    <span class="dateshow">
+                                        15 Mar 2025
+                                    </span>
+                                </h4>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="booking-modal-option">
+                                <dl>
+                                    <dt>আপনার তারিখ নির্বাচন করুন  </dt>
+                                    <dd class="date">
+                                        <input type="date" name="reservation_date" value="2025-03-15" id="datePick">
+                                    </dd>
+                                </dl>
+                                <button class="done" type="button">সম্পন্ন </button>
+                            </div>
+                        </div>
+                        <div class="booking-modal-group">
+                            <div class="booking-modal-select">
+                                <h4><span>অতিথির সংখ্যা </span>
+                                    <span class="guestQty guestotal d-inline">1</span>
+                                    <span class="d-inline guestQty">অতিথি </span>
+                                </h4>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="booking-modal-option">
+                                <dl>
+                                    <dt> অতিথির সংখ্যা নির্বাচন করুন </dt>
+                                    <dd class="cart-counter">
+                                        <button type="button" class="fa-solid fa-minus qminus"></button>
+                                        <input type="number" name="qtyInput" value="1" id="qtyInput" class="cart-counter-value">
+                                        <button type="button" class="fa-solid fa-plus qplus"></button>
+                                    </dd>
+                                </dl>
+                                <button class="done plusMinusBtn" type="button">সম্পন্ন</button>
+                            </div>
+                        </div>
+                        <div class="booking-modal-time  ">
+                            <h4>সময় স্লট নির্বাচন করুন</h4>
+
+                            <ul class="panel-dropdown-scrollable  reserveList" id="showTimeSlot">
+
+                            </ul>
+
+                        </div>
+
+                        <div class="text-danger jsbook">
+
+                        </div>
+                    </div>
+                    <div class="booking-modal-footer">
+                        <button type="submit" id="bkkkid" class="cart-btn">বুকিং অনুরোধ করুন </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--====== Table BOOKING MODAL PART END ==========-->
+
+
+    <!--======= Resturent Infromation MODAL START =========-->
+    <div class="modal fade shop-modal" id="shop-modal" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="shop-modal-header">
+                    <button class="fa-regular fa-circle-xmark" type="button" data-bs-dismiss="modal"></button>
+                    <img src="../storage/8/conversions/the-salad-god-image.jpg" alt="restaurant">
+                </div>
+                <div class="shop-modal-meta">
+                    <h3>The Salad God </h3>
+                                            <h4>
+                                                            Asian
+                                                                    <span>-</span>
+                                                                                            Dessert
+                                                                                    </h4>
+                                        <p>খোলা 11:00 PM -
+                        01:00 AM </p>
+                </div>
+                <div class="nav nav-tabs">
+                    <a class="nav-link active" data-bs-toggle="tab" href="#about">সম্পর্কে</a>
+                    <a class="nav-link" data-bs-toggle="tab" href="#reviews">পর্যালোচনা</a>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="about">
+                        <div class="shop-modal-about">
+                            <ul>
+                                <li>
+                                    <h3>ডেলিভারি ঘণ্টা </h3>
+                                    <p> 11:00 PM -
+                                        01:00 AM </p>
+                                </li>
+                                <li>
+                                    <h3>ঠিকানা</h3>
+                                    <p>250 W 72nd St, New York, United State </p>
+                                </li>
+                            </ul>
+                            <img src="data:image/png;base64,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" alt="qr">
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="reviews">
+
+                                                <br>
+                                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--======= Resturent Infromation MODAL END ==========-->
+
+
+    
+    </div>
+    <!--========= JS LINK PART START =====-->
+    <script src="../frontend/lib/jquery-3.5.0.min.js"></script>
+    <script src="../frontend/lib/bootstrap/bootstrap.min.js"></script>
+    <script src="../frontend/lib/swiper/swiper-bundle.min.js"></script>
+    <script src="../frontend/lib/swiper/swiper-initialize.js"></script>
+    <script src="../assets/modules/izitoast/dist/js/iziToast.min.js"></script>
+    <script src="../firebasejs/8.3.2/firebase-app.js"></script>
+    <script src="../firebasejs/8.3.2/firebase-messaging.js"></script>
+    <script src="../firebasejs/8.3.2/firebase.js"></script>
+    <!-- custom js Start -->
+    <script type="application/javascript">
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+    </script>
+
+    <script type="text/javascript">
+        
+        
+            </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            const beep = document.getElementById("myAudio1");
+            function sound() {
+                beep.play();
+            }
+            const firebaseConfig = {
+                apiKey: "AIzaSyBrH_s10OeCpDTjueSoIbwhBs_opCT4ga0",
+                authDomain: "new-project-3e70e.firebaseapp.com",
+                projectId: "new-project-3e70e",
+                storageBucket: "new-project-3e70e.appspot.com",
+                messagingSenderId: "874879259832",
+                appId: "1:874879259832:web:3626882efc52d6c133904d",
+                measurementId: "G-DSCN9Z36TR",
+            };
+            firebase.initializeApp(firebaseConfig);
+            const messaging = firebase.messaging();
+            startFCM();
+            function startFCM() {
+                messaging.requestPermission()
+                    .then(function() {
+                        return messaging.getToken()
+                    })
+                    .then(function(response) {
+                        $.ajax({
+                            url: 'https://demo.food-bank.xyz/store-token',
+                            type: 'POST',
+                            data: {
+                                token: response
+                            },
+                            dataType: 'JSON',
+                            success: function(response) {
+                            },
+                            error: function(error) {
+                            },
+                        });
+
+                    }).catch(function(error) {});
+            }
+
+            messaging.onMessage(function(payload) {
+                console.log(payload);
+                const title = payload.notification.title;
+                const body = payload.notification.body;
+                sound(); 
+                new Notification(title, {
+                    body: body,
+                });
+            });
+        });
+    </script>
+
+        <script> const reservationUrl = "https://demo.food-bank.xyz/reservation/check";</script>
+    <script src="../frontend/js/booking.js" type="text/javascript"></script>
+    <script src="../frontend/js/show.js" type="text/javascript"></script>
+    <script src="../frontend/js/loader.js" type="text/javascript"></script>
+    <script src="../frontend/js/navcount.js" type="text/javascript"></script>
+    <!-- Livewire Scripts -->
+<script>
+    console.warn('Livewire: The published Livewire assets are out of date\n See: https://livewire.laravel.com/docs/installation#publishing-livewires-frontend-assets')
+</script>
+<script src="../vendor/livewire/livewire.js?id=c4fc8c5d" data-csrf="6yqkZqWWUr1EKwzGgIZezbglHENj7YQRrwovD9Q7" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+        <script src="../js/order-cart.js"></script>
+    <script src="../frontend/js/script.js"></script>
+
+</body>
+
+</html>

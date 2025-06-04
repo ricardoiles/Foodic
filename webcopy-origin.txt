@@ -1,0 +1,468 @@
+Uri: https://demo.food-bank.xyz/
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\index.htm
+Content Type: text/html
+
+Uri: https://demo.food-bank.xyz/assets/modules/izitoast/dist/css/iziToast.min.css
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\assets\modules\izitoast\dist\css\iziToast.min.css
+Content Type: text/css
+
+Uri: https://demo.food-bank.xyz/assets/modules/izitoast/dist/js/iziToast.min.js
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\assets\modules\izitoast\dist\js\iziToast.min.js
+Content Type: application/javascript
+
+Uri: https://demo.food-bank.xyz/beep.mp3
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\beep.mp3
+Content Type: audio/mpeg
+
+Uri: https://demo.food-bank.xyz/frontend/css/expanded/custom.css
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\css\expanded\custom.css
+Content Type: text/css
+
+Uri: https://demo.food-bank.xyz/frontend/css/expanded/style.css
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\css\expanded\style.css
+Content Type: text/css
+
+Uri: https://demo.food-bank.xyz/frontend/fonts/fontawesome/fa-brands-400.ttf
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\fonts\fontawesome\fa-brands-400.ttf
+Content Type: application/octet-stream
+
+Uri: https://demo.food-bank.xyz/frontend/fonts/fontawesome/fa-brands-400.woff2
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\fonts\fontawesome\fa-brands-400.woff2
+Content Type: application/octet-stream
+
+Uri: https://demo.food-bank.xyz/frontend/fonts/fontawesome/fa-regular-400.ttf
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\fonts\fontawesome\fa-regular-400.ttf
+Content Type: application/octet-stream
+
+Uri: https://demo.food-bank.xyz/frontend/fonts/fontawesome/fa-regular-400.woff2
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\fonts\fontawesome\fa-regular-400.woff2
+Content Type: application/octet-stream
+
+Uri: https://demo.food-bank.xyz/frontend/fonts/fontawesome/fa-solid-900.ttf
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\fonts\fontawesome\fa-solid-900.ttf
+Content Type: application/octet-stream
+
+Uri: https://demo.food-bank.xyz/frontend/fonts/fontawesome/fa-solid-900.woff2
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\fonts\fontawesome\fa-solid-900.woff2
+Content Type: application/octet-stream
+
+Uri: https://demo.food-bank.xyz/frontend/fonts/fontawesome/fa-v4compatibility.ttf
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\fonts\fontawesome\fa-v4compatibility.ttf
+Content Type: application/octet-stream
+
+Uri: https://demo.food-bank.xyz/frontend/fonts/fontawesome/fa-v4compatibility.woff2
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\fonts\fontawesome\fa-v4compatibility.woff2
+Content Type: application/octet-stream
+
+Uri: https://demo.food-bank.xyz/frontend/fonts/fontawesome/fontawesome.min.css
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\fonts\fontawesome\fontawesome.min.css
+Content Type: text/css
+
+Uri: https://demo.food-bank.xyz/frontend/fonts/lineicons/LineIcons.eot
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\fonts\lineicons\LineIcons.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://demo.food-bank.xyz/frontend/fonts/lineicons/lineicons.min.css
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\fonts\lineicons\lineicons.min.css
+Content Type: text/css
+
+Uri: https://demo.food-bank.xyz/frontend/fonts/lineicons/LineIcons.svg
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\fonts\lineicons\LineIcons.svg
+Content Type: image/svg+xml
+
+Uri: https://demo.food-bank.xyz/frontend/fonts/lineicons/LineIcons.ttf
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\fonts\lineicons\LineIcons.ttf
+Content Type: application/octet-stream
+
+Uri: https://demo.food-bank.xyz/frontend/fonts/lineicons/LineIcons.woff
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\fonts\lineicons\LineIcons.woff
+Content Type: application/font-woff
+
+Uri: https://demo.food-bank.xyz/frontend/fonts/lineicons/LineIcons.woff2
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\fonts\lineicons\LineIcons.woff2
+Content Type: application/octet-stream
+
+Uri: https://demo.food-bank.xyz/frontend/fonts/opensauce/opensauce.min.css
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\fonts\opensauce\opensauce.min.css
+Content Type: text/css
+
+Uri: https://demo.food-bank.xyz/frontend/fonts/opensauce/OpenSauceOne-Black.ttf
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\fonts\opensauce\OpenSauceOne-Black.ttf
+Content Type: application/octet-stream
+
+Uri: https://demo.food-bank.xyz/frontend/fonts/opensauce/OpenSauceOne-Bold.ttf
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\fonts\opensauce\OpenSauceOne-Bold.ttf
+Content Type: application/octet-stream
+
+Uri: https://demo.food-bank.xyz/frontend/fonts/opensauce/OpenSauceOne-ExtraBold.ttf
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\fonts\opensauce\OpenSauceOne-ExtraBold.ttf
+Content Type: application/octet-stream
+
+Uri: https://demo.food-bank.xyz/frontend/fonts/opensauce/OpenSauceOne-Light.ttf
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\fonts\opensauce\OpenSauceOne-Light.ttf
+Content Type: application/octet-stream
+
+Uri: https://demo.food-bank.xyz/frontend/fonts/opensauce/OpenSauceOne-Medium.ttf
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\fonts\opensauce\OpenSauceOne-Medium.ttf
+Content Type: application/octet-stream
+
+Uri: https://demo.food-bank.xyz/frontend/fonts/opensauce/OpenSauceOne-Regular.ttf
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\fonts\opensauce\OpenSauceOne-Regular.ttf
+Content Type: application/octet-stream
+
+Uri: https://demo.food-bank.xyz/frontend/fonts/opensauce/OpenSauceOne-SemiBold.ttf
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\fonts\opensauce\OpenSauceOne-SemiBold.ttf
+Content Type: application/octet-stream
+
+Uri: https://demo.food-bank.xyz/frontend/images/app.png
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\images\app.png
+Content Type: image/png
+
+Uri: https://demo.food-bank.xyz/frontend/images/auth.jpg
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\images\auth.jpg
+Content Type: image/jpeg
+
+Uri: https://demo.food-bank.xyz/frontend/images/default/loader.gif
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\images\default\loader.gif
+Content Type: image/gif
+
+Uri: https://demo.food-bank.xyz/frontend/images/gif/empty.gif
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\images\gif\empty.gif
+Content Type: image/gif
+
+Uri: https://demo.food-bank.xyz/frontend/images/gif/table.gif
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\images\gif\table.gif
+Content Type: image/gif
+
+Uri: https://demo.food-bank.xyz/frontend/images/mask.svg
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\images\mask.svg
+Content Type: image/svg+xml
+
+Uri: https://demo.food-bank.xyz/frontend/images/play.png
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\images\play.png
+Content Type: image/png
+
+Uri: https://demo.food-bank.xyz/frontend/images/social/facebook.png
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\images\social\facebook.png
+Content Type: image/png
+
+Uri: https://demo.food-bank.xyz/frontend/images/social/google.png
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\images\social\google.png
+Content Type: image/png
+
+Uri: https://demo.food-bank.xyz/frontend/js/booking.js
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\js\booking.js
+Content Type: application/javascript
+
+Uri: https://demo.food-bank.xyz/frontend/js/customrangeslider.js
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\js\customrangeslider.js
+Content Type: application/javascript
+
+Uri: https://demo.food-bank.xyz/frontend/js/demo-login.js
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\js\demo-login.js
+Content Type: application/javascript
+
+Uri: https://demo.food-bank.xyz/frontend/js/loader.js
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\js\loader.js
+Content Type: application/javascript
+
+Uri: https://demo.food-bank.xyz/frontend/js/map-current.js
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\js\map-current.js
+Content Type: application/javascript
+
+Uri: https://demo.food-bank.xyz/frontend/js/navcount.js
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\js\navcount.js
+Content Type: application/javascript
+
+Uri: https://demo.food-bank.xyz/frontend/js/rangeslider.min.js
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\js\rangeslider.min.js
+Content Type: application/javascript
+
+Uri: https://demo.food-bank.xyz/frontend/js/script.js
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\js\script.js
+Content Type: application/javascript
+
+Uri: https://demo.food-bank.xyz/frontend/js/show.js
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\js\show.js
+Content Type: application/javascript
+
+Uri: https://demo.food-bank.xyz/frontend/lib/bootstrap/bootstrap.min.css
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\lib\bootstrap\bootstrap.min.css
+Content Type: text/css
+
+Uri: https://demo.food-bank.xyz/frontend/lib/bootstrap/bootstrap.min.js
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\lib\bootstrap\bootstrap.min.js
+Content Type: application/javascript
+
+Uri: https://demo.food-bank.xyz/frontend/lib/inttelinput/css/intlTelInput.css
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\lib\inttelinput\css\intlTelInput.css
+Content Type: text/css
+
+Uri: https://demo.food-bank.xyz/frontend/lib/inttelinput/img/flags.png
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\lib\inttelinput\img\flags.png
+Content Type: image/png
+
+Uri: https://demo.food-bank.xyz/frontend/lib/inttelinput/img/flags@2x.png
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\lib\inttelinput\img\flags@2x.png
+Content Type: image/png
+
+Uri: https://demo.food-bank.xyz/frontend/lib/inttelinput/js/data.js
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\lib\inttelinput\js\data.js
+Content Type: application/javascript
+
+Uri: https://demo.food-bank.xyz/frontend/lib/inttelinput/js/init.js
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\lib\inttelinput\js\init.js
+Content Type: application/javascript
+
+Uri: https://demo.food-bank.xyz/frontend/lib/inttelinput/js/intlTelInput-jquery.js
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\lib\inttelinput\js\intlTelInput-jquery.js
+Content Type: application/javascript
+
+Uri: https://demo.food-bank.xyz/frontend/lib/inttelinput/js/intlTelInput.js
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\lib\inttelinput\js\intlTelInput.js
+Content Type: application/javascript
+
+Uri: https://demo.food-bank.xyz/frontend/lib/inttelinput/js/utils.js
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\lib\inttelinput\js\utils.js
+Content Type: application/javascript
+
+Uri: https://demo.food-bank.xyz/frontend/lib/jquery-3.5.0.min.js
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\lib\jquery-3.5.0.min.js
+Content Type: application/javascript
+
+Uri: https://demo.food-bank.xyz/frontend/lib/swiper/swiper-bundle.min.css
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\lib\swiper\swiper-bundle.min.css
+Content Type: text/css
+
+Uri: https://demo.food-bank.xyz/frontend/lib/swiper/swiper-bundle.min.js
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\lib\swiper\swiper-bundle.min.js
+Content Type: application/javascript
+
+Uri: https://demo.food-bank.xyz/frontend/lib/swiper/swiper-initialize.js
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\frontend\lib\swiper\swiper-initialize.js
+Content Type: application/javascript
+
+Uri: https://demo.food-bank.xyz/images/seeder/settings/favicon.png
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\images\seeder\settings\favicon.png
+Content Type: image/png
+
+Uri: https://demo.food-bank.xyz/images/seeder/settings/hero.png
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\images\seeder\settings\hero.png
+Content Type: image/png
+
+Uri: https://demo.food-bank.xyz/images/seeder/settings/logo.png
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\images\seeder\settings\logo.png
+Content Type: image/png
+
+Uri: https://demo.food-bank.xyz/images/seeder/settings/mockup.png
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\images\seeder\settings\mockup.png
+Content Type: image/png
+
+Uri: https://demo.food-bank.xyz/js/order-cart.js
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\js\order-cart.js
+Content Type: application/javascript
+
+Uri: https://demo.food-bank.xyz/js/phone_validation/index.js
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\js\phone_validation\index.js
+Content Type: application/javascript
+
+Uri: https://demo.food-bank.xyz/js/search/search.js
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\js\search\search.js
+Content Type: application/javascript
+
+Uri: https://demo.food-bank.xyz/login
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\login.html
+Content Type: text/html
+
+Uri: https://demo.food-bank.xyz/page/about-us
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\page\about-us.html
+Content Type: text/html
+
+Uri: https://demo.food-bank.xyz/page/contact-us
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\page\contact-us.html
+Content Type: text/html
+
+Uri: https://demo.food-bank.xyz/page/privacy-and-policy
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\page\privacy-and-policy.html
+Content Type: text/html
+
+Uri: https://demo.food-bank.xyz/page/terms-and-condition
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\page\terms-and-condition.html
+Content Type: text/html
+
+Uri: https://demo.food-bank.xyz/password/reset
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\password\reset.html
+Content Type: text/html
+
+Uri: https://demo.food-bank.xyz/register
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\register.html
+Content Type: text/html
+
+Uri: https://demo.food-bank.xyz/restaurant/burger-king
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\restaurant\burger-king.html
+Content Type: text/html
+
+Uri: https://demo.food-bank.xyz/restaurant/gustosa-pasta
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\restaurant\gustosa-pasta.html
+Content Type: text/html
+
+Uri: https://demo.food-bank.xyz/restaurant/mcdonalds
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\restaurant\mcdonalds.html
+Content Type: text/html
+
+Uri: https://demo.food-bank.xyz/restaurant/mr-beast-burger
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\restaurant\mr-beast-burger.html
+Content Type: text/html
+
+Uri: https://demo.food-bank.xyz/restaurant/starbucks
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\restaurant\starbucks.html
+Content Type: text/html
+
+Uri: https://demo.food-bank.xyz/restaurant/sultans-dine
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\restaurant\sultans-dine.html
+Content Type: text/html
+
+Uri: https://demo.food-bank.xyz/restaurant/the-salad-god
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\restaurant\the-salad-god.html
+Content Type: text/html
+
+Uri: https://demo.food-bank.xyz/restaurant/wham-bam-burrito
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\restaurant\wham-bam-burrito.html
+Content Type: text/html
+
+Uri: https://demo.food-bank.xyz/search
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\search-8.html
+Content Type: text/html
+
+Uri: https://demo.food-bank.xyz/search?cuisines[0]=american&expedition=all
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\search-2.html
+Content Type: text/html
+
+Uri: https://demo.food-bank.xyz/search?cuisines[0]=asian&expedition=all
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\search-3.html
+Content Type: text/html
+
+Uri: https://demo.food-bank.xyz/search?cuisines[0]=bangladeshi&expedition=all
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\search.html
+Content Type: text/html
+
+Uri: https://demo.food-bank.xyz/search?cuisines[0]=burger&expedition=all
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\search-6.html
+Content Type: text/html
+
+Uri: https://demo.food-bank.xyz/search?cuisines[0]=chicken&expedition=all
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\search-1.html
+Content Type: text/html
+
+Uri: https://demo.food-bank.xyz/search?cuisines[0]=dessert&expedition=all
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\search-7.html
+Content Type: text/html
+
+Uri: https://demo.food-bank.xyz/search?cuisines[0]=mexican&expedition=all
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\search-4.html
+Content Type: text/html
+
+Uri: https://demo.food-bank.xyz/search?cuisines[0]=pizza&expedition=all
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\search-5.html
+Content Type: text/html
+
+Uri: https://demo.food-bank.xyz/storage/1/conversions/sultans-dine-image.jpg
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\storage\1\conversions\sultans-dine-image.jpg
+Content Type: image/jpeg
+
+Uri: https://demo.food-bank.xyz/storage/2/conversions/mr-beast-burger-image.jpg
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\storage\2\conversions\mr-beast-burger-image.jpg
+Content Type: image/jpeg
+
+Uri: https://demo.food-bank.xyz/storage/3/conversions/starbucks-image.jpg
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\storage\3\conversions\starbucks-image.jpg
+Content Type: image/jpeg
+
+Uri: https://demo.food-bank.xyz/storage/4/conversions/mcdonalds-image.jpg
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\storage\4\conversions\mcdonalds-image.jpg
+Content Type: image/jpeg
+
+Uri: https://demo.food-bank.xyz/storage/5/conversions/burger-king-image.jpg
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\storage\5\conversions\burger-king-image.jpg
+Content Type: image/jpeg
+
+Uri: https://demo.food-bank.xyz/storage/6/conversions/gustosa-pasta-image.jpg
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\storage\6\conversions\gustosa-pasta-image.jpg
+Content Type: image/jpeg
+
+Uri: https://demo.food-bank.xyz/storage/7/conversions/wham-bam-burrito-image.jpg
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\storage\7\conversions\wham-bam-burrito-image.jpg
+Content Type: image/jpeg
+
+Uri: https://demo.food-bank.xyz/storage/74/conversions/bangladeshi-image.jpg
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\storage\74\conversions\bangladeshi-image.jpg
+Content Type: image/jpeg
+
+Uri: https://demo.food-bank.xyz/storage/75/conversions/american-image.jpg
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\storage\75\conversions\american-image.jpg
+Content Type: image/jpeg
+
+Uri: https://demo.food-bank.xyz/storage/76/conversions/asian-image.jpg
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\storage\76\conversions\asian-image.jpg
+Content Type: image/jpeg
+
+Uri: https://demo.food-bank.xyz/storage/77/conversions/mexican-image.jpg
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\storage\77\conversions\mexican-image.jpg
+Content Type: image/jpeg
+
+Uri: https://demo.food-bank.xyz/storage/78/conversions/pizza-image.jpg
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\storage\78\conversions\pizza-image.jpg
+Content Type: image/jpeg
+
+Uri: https://demo.food-bank.xyz/storage/79/conversions/burger-image.jpg
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\storage\79\conversions\burger-image.jpg
+Content Type: image/jpeg
+
+Uri: https://demo.food-bank.xyz/storage/8/conversions/the-salad-god-image.jpg
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\storage\8\conversions\the-salad-god-image.jpg
+Content Type: image/jpeg
+
+Uri: https://demo.food-bank.xyz/storage/80/conversions/dessert-image.jpg
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\storage\80\conversions\dessert-image.jpg
+Content Type: image/jpeg
+
+Uri: https://demo.food-bank.xyz/storage/81/conversions/chicken-image.jpg
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\storage\81\conversions\chicken-image.jpg
+Content Type: image/jpeg
+
+Uri: https://demo.food-bank.xyz/themes/scripts/infobox.min.js
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\themes\scripts\infobox.min.js
+Content Type: application/javascript
+
+Uri: https://demo.food-bank.xyz/themes/scripts/maps.js
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\themes\scripts\maps.js
+Content Type: application/javascript
+
+Uri: https://demo.food-bank.xyz/themes/scripts/markerclusterer.js
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\themes\scripts\markerclusterer.js
+Content Type: application/javascript
+
+Uri: https://demo.food-bank.xyz/themes/scripts/typed.js
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\themes\scripts\typed.js
+Content Type: application/javascript
+
+Uri: https://demo.food-bank.xyz/vendor/livewire/livewire.js?id=c4fc8c5d
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\vendor\livewire\livewire.js
+Content Type: application/javascript
+
+Uri: https://maps.googleapis.com/maps/api/js?key=AIzaSyBvRR2Xoh_6-RY8-6WkU4JE9M9zg1LaL-I&libraries=places&callback=initAutocomplete
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\maps\api\js
+Content Type: text/javascript
+
+Uri: https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\firebasejs\8.3.2\firebase-app.js
+Content Type: text/javascript
+
+Uri: https://www.gstatic.com/firebasejs/8.3.2/firebase-messaging.js
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\firebasejs\8.3.2\firebase-messaging.js
+Content Type: text/javascript
+
+Uri: https://www.gstatic.com/firebasejs/8.3.2/firebase.js
+File Name: C:\Users\Daniel\Documents\Download Templates WebCopy\demo.food-bank.xyz\firebasejs\8.3.2\firebase.js
+Content Type: text/javascript
+
