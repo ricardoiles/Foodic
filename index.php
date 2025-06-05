@@ -29,7 +29,7 @@
                         <h1 class="banner-title"> Toíto lo sabroso de <span class="span">Pitalito</span>, en un solo lugar</h1>
 
                         <p class="banner-subtitle"> Del plato a la pantalla: La guía para el buen comer, sin larga espera. </p>
-                        <form method="GET" action="search.php">
+                        <form method="GET" action="search-3.php">
                             <div class="main-search-input">
                                 <input type="hidden" id="lat" name="lat" required="" value="">
                                 <input type="hidden" id="long" name="long" required="" value="">
@@ -397,7 +397,6 @@
                                 </div>
                             </a>
                     </div>
-
                 </div>
                 <div class="text-center mt-4">
                     <a href="search.html?cuisines%5B0%5D=all&amp;expedition=all" class="btn btn-buscar-landing text-white rounded-pill">

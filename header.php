@@ -3,16 +3,18 @@
         <div class="container">
             <div class="header-content">
                 <div class="header-logo">
-                    <img src="images/seeder/settings/foodic_largepng.png" 
-                        data-sticky-logo="https://demo.food-bank.xyz/images/seeder/settings/foodic_largepng.png" alt="logo">
-                        <a href="#sitio" class="span loc-nav-icon">
-                            <i class="bi bi-geo-fill"></i>
-                            <label class="loc-nav">Pitalito</label>
-                        </a>
+                    <a href="index.php">
+                        <img src="images/seeder/settings/foodic_largepng.png" 
+                            data-sticky-logo="https://demo.food-bank.xyz/images/seeder/settings/foodic_largepng.png" alt="logo">
+                    </a>
+                    <a href="#sitio" class="span loc-nav-icon">
+                        <i class="bi bi-geo-fill"></i>
+                        <label class="loc-nav">Pitalito</label>
+                    </a>
                 </div>
                 <div class="header-group">
                     <div class="header-selection">
-                        <a href="#buscar">
+                        <a href="search.php">
                             <button type="button" class="header-selection-btn">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                                     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
