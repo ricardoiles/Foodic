@@ -21,6 +21,12 @@
                                 <span>Todo</span>
                             </button>
                         </a>
+                        <a onclick="expedition('table')" class="expedition me-md-3 me-sm-2 me-0" data-filter=".delivery-filter">
+                            <button type="button" class="swiper-slide ">
+                                <i class="fa-solid fa-border-all"></i>
+                                <span> Ordenar en mesa </span>
+                            </button>
+                        </a>
                         <a onclick="expedition('delivery')" class="expedition me-md-3 me-sm-2 me-0" data-filter=".delivery-filter">
                             <button type="button" class="swiper-slide  ">
                                 <i class="fa-solid fa-person-biking"></i>
@@ -30,13 +36,18 @@
                         <a onclick="expedition('pickup')" class="expedition me-md-3 me-sm-2 me-0" data-filter=".delivery-filter">
                             <button type="button" class="swiper-slide  ">
                                 <i class="fa-solid fa-burger"></i>
-                                <span>Para llevar</span>
+                                <span>Para recoger</span>
                             </button>
                         </a>
-                        <a onclick="expedition('table')" class="expedition me-md-3 me-sm-2 me-0" data-filter=".delivery-filter">
-                            <button type="button" class="swiper-slide ">
-                                <i class="fa-solid fa-border-all"></i>
-                                <span> Ordenar en mesa </span>
+                        <a class="expedition me-md-3 me-sm-2 me-0" data-filter=".delivery-filter">
+                            <button type="button" class="swiper-slide bg-danger text-white"
+                                data-bs-toggle="collapse" 
+                                data-bs-target="#collapseFiltros" 
+                                aria-expanded="false" 
+                                aria-controls="collapseFiltros"
+                                id="btnFiltros">
+                                <i class="bi bi-funnel-fill"></i>
+                                <span>Filtar busqueda</span> <i class="bi bi-chevron-down"></i>
                             </button>
                         </a>
                     </nav>
@@ -46,112 +57,188 @@
                     <input type="hidden" class="form-control" id="lat" name="lat" value="">
                     <input type="hidden" class="form-control" id="long" name="long" value="">
                     <input type="hidden" id="expedition" name="expedition" value="all ">
-                    <div class="filter-options">
-
-                        <div class="filter-search">
-                            <button type="submit" class="lni lni-search-alt"></button>
-                            <input type="text" name="query" id="search" placeholder="Buscar restaurante." value="">
-                        </div>
-
-                        <div class="filter-search location">
-                            <a href="javascript:void(0)">
-                                <button type="submit" class="lni lni-search-alt" onclick="getLocation()"></button>
-                            </a>
-                            <div id="autocomplete-container">
-                                <input id="autocomplete-input" type="text" placeholder="Buscar por ubicación">
+                    <!-- acordeon de filtros -->
+                    <div class="collapse mt-3" id="collapseFiltros">
+                            <div class="row">
+                            <div class="col-12 col-sm-3">
+                                <div class="form-group filter-search">
+                                    <input type="text" name="query" id="comida" placeholder="Buscar por Comida" value="">
+                                    <button type="submit" class="lni lni-search-alt"></button>
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="filter-select">
-                            <div class="dropdown">
-                                <button class="custonDropdown d-flex justify-content-center" type="button" id="zonaDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Zona
-                                </button>
-                                <ul class="dropdown-menu w-100 p-3" aria-labelledby="zonaDropdown" style="min-width: 250px;">
-                                    <div class="row">
-                                        <div class="col-xl-6">
-                                            <div class="form-check">
-                                                <input class="form-check-input" id="check-5" type="checkbox" name="cuisines[]" value="pizza">
-                                                <label class="form-check-label" for="check-5">Urbana</label>
+                            <div class="col-12 col-sm-3">
+                                <div class="form-group filter-search">
+                                    <input type="text" name="query" id="comida" placeholder="Buscar por Foodic" value="">
+                                    <button type="submit" class="lni lni-search-alt"></button>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-3">
+                                <div class="form-group filter-search">
+                                    <input type="text" name="query" id="comida" placeholder="Buscar por ubicación" value="">
+                                    <button type="submit" class="lni lni-search-alt"></button>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-3">
+                                <div class="filter-select">
+                                    <div class="dropdown">
+                                        <button class="custonDropdown d-flex justify-content-center" 
+                                                type="button" 
+                                                id="precioDropdown" 
+                                                data-bs-toggle="dropdown" 
+                                                aria-expanded="false">
+                                            Precio
+                                        </button>
+                                        
+                                        <ul class="dropdown-menu w-100 p-3" aria-labelledby="precioDropdown" style="min-width: 250px;">
+                                            <div class="mb-3">
+                                                <label for="rangePrecio" class="form-label">Rango Máximo de Precio:</label>
+                                                
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text">$</span>
+                                                    <input type="text" 
+                                                        class="form-control" 
+                                                        id="inputPrecio" 
+                                                        value="10.000" 
+                                                        readonly> 
+                                                </div>
+                                                
+                                                <input type="range" 
+                                                    class="form-range" 
+                                                    id="rangePrecio" 
+                                                    min="1"        max="10"       step="1"       value="10">    <small class="text-muted">Desliza para seleccionar el precio.</small>
+                                            </div>
+                                            
+                                            <div class="d-flex justify-content-between mt-3">
+                                                <button type="button" class="btn btn-outline-secondary btn-sm panel-cancel">Cancelar</button>
+                                                <button type="button" class="btn btn-primary btn-sm panel-apply">Aplicar</button>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 12 -->
+                            <div class="col-12 col-sm-4">
+                                <label class="text-center">Puntuación</label>
+                               <div class="star-rating-interactive d-flex justify-content-center gap-2">
+                                    <input type="radio" id="rating-5" name="star-rating" value="5" />
+                                    <label for="rating-5" title="5 estrellas">
+                                        <i class="bi bi-star-fill"></i>
+                                    </label>
+                                    
+                                    <input type="radio" id="rating-4" name="star-rating" value="4" />
+                                    <label for="rating-4" title="4 estrellas">
+                                        <i class="bi bi-star-fill"></i>
+                                    </label>
+                                    
+                                    <input type="radio" id="rating-3" name="star-rating" value="3" />
+                                    <label for="rating-3" title="3 estrellas">
+                                        <i class="bi bi-star-fill"></i>
+                                    </label>
+                                    
+                                    <input type="radio" id="rating-2" name="star-rating" value="2" />
+                                    <label for="rating-2" title="2 estrellas">
+                                        <i class="bi bi-star-fill"></i>
+                                    </label>
+                                    
+                                    <input type="radio" id="rating-1" name="star-rating" value="1" />
+                                    <label for="rating-1" title="1 estrella">
+                                        <i class="bi bi-star-fill"></i>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-3">
+                                <div class="dropdown">
+                                    <button class="custonDropdown d-flex justify-content-center" type="button" id="zonaDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Zona
+                                    </button>
+                                    <ul class="dropdown-menu w-100 p-3" aria-labelledby="zonaDropdown" style="min-width: 250px;">
+                                        <div class="row">
+                                            <div class="col-xl-6">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" id="check-5" type="checkbox" name="cuisines[]" value="pizza">
+                                                    <label class="form-check-label" for="check-5">Urbana</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" id="check-4" type="checkbox" name="cuisines[]" value="mexican">
+                                                    <label class="form-check-label" for="check-4">Rural</label>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-xl-6">
-                                            <div class="form-check">
-                                                <input class="form-check-input" id="check-4" type="checkbox" name="cuisines[]" value="mexican">
-                                                <label class="form-check-label" for="check-4">Rural</label>
+                                        <div class="d-flex justify-content-between mt-3">
+                                            <button type="button" class="btn btn-outline-secondary btn-sm panel-cancel">Cancelar</button>
+                                            <button type="button" class="btn btn-primary btn-sm panel-apply">Aplicar</button>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-3">
+                                <div class="dropdown">
+                                    <button class="custonDropdown d-flex justify-content-center" type="button" id="distanciaDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Categorías
+                                    </button>
+                                    <ul class="dropdown-menu w-100 p-3" aria-labelledby="distanciaDropdown" style="min-width: 250px;">
+                                        <div class="mb-3">
+                                            <label class="form-label">Buscar categoría</label>
+                                            <input type="text" class="form-control mb-2" id="categoriaSearch" placeholder="Buscar...">
+                                        </div>
+                                        <div class="mb-3" style="max-height: 200px; overflow-y: auto;">
+                                            <label class="form-label">Selecciona una o varias categorías</label>
+                                            <div id="categorias-list">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="categories[]" value="comida_rapida" id="cat1">
+                                                    <label class="form-check-label" for="cat1">Comida rápida</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="categories[]" value="pizzeria" id="cat2">
+                                                    <label class="form-check-label" for="cat2">Pizzería</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="categories[]" value="cafeteria" id="cat3">
+                                                    <label class="form-check-label" for="cat3">Cafetería</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="categories[]" value="bar" id="cat4">
+                                                    <label class="form-check-label" for="cat4">Bar</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="categories[]" value="parrilla" id="cat5">
+                                                    <label class="form-check-label" for="cat5">Parrilla</label>
+                                                </div>
+                                                <!-- Agrega más categorías según sea necesario -->
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="d-flex justify-content-between mt-3">
-                                        <button type="button" class="btn btn-outline-secondary btn-sm panel-cancel">Cancelar</button>
-                                        <button type="button" class="btn btn-primary btn-sm panel-apply">Aplicar</button>
-                                    </div>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="filter-select">
-                            <div class="dropdown">
-                                <button class="custonDropdown d-flex justify-content-center" type="button" id="distanciaDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Categorías
-                                </button>
-                                <ul class="dropdown-menu w-100 p-3" aria-labelledby="distanciaDropdown" style="min-width: 250px;">
-                                    <div class="mb-3">
-                                        <label class="form-label">Buscar categoría</label>
-                                        <input type="text" class="form-control mb-2" id="categoriaSearch" placeholder="Buscar...">
-                                    </div>
-                                    <div class="mb-3" style="max-height: 200px; overflow-y: auto;">
-                                        <label class="form-label">Selecciona una o varias categorías</label>
-                                        <div id="categorias-list">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" name="categories[]" value="comida_rapida" id="cat1">
-                                                <label class="form-check-label" for="cat1">Comida rápida</label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" name="categories[]" value="pizzeria" id="cat2">
-                                                <label class="form-check-label" for="cat2">Pizzería</label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" name="categories[]" value="cafeteria" id="cat3">
-                                                <label class="form-check-label" for="cat3">Cafetería</label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" name="categories[]" value="bar" id="cat4">
-                                                <label class="form-check-label" for="cat4">Bar</label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" name="categories[]" value="parrilla" id="cat5">
-                                                <label class="form-check-label" for="cat5">Parrilla</label>
-                                            </div>
-                                            <!-- Agrega más categorías según sea necesario -->
+                                        <div class="d-flex justify-content-between">
+                                            <button type="button" class="btn btn-outline-secondary btn-sm panel-cancel">Cancelar</button>
+                                            <button type="button" class="btn btn-primary btn-sm panel-apply">Aplicar</button>
                                         </div>
-                                    </div>
-                                    <div class="d-flex justify-content-between">
-                                        <button type="button" class="btn btn-outline-secondary btn-sm panel-cancel">Cancelar</button>
-                                        <button type="button" class="btn btn-primary btn-sm panel-apply">Aplicar</button>
-                                    </div>
-                                </ul>
+                                    </ul>
+                                </div>
                             </div>
-                            <script>
-                                document.getElementById('categoriaSearch').addEventListener('input', function() {
-                                    var filter = this.value.toLowerCase();
-                                    var items = document.querySelectorAll('#categorias-list .form-check');
-                                    items.forEach(function(item) {
-                                        var label = item.querySelector('label').textContent.toLowerCase();
-                                        item.style.display = label.includes(filter) ? '' : 'none';
-                                    });
-                                });
-                            </script>
+                            <div class="col-12 col-sm-2">
+                                <div class="filter-button">
+                                    <button type="button">
+                                        <a class="clearBtn d-block" href="#limpiar" class="text-danger">
+                                            <span>Limpiar</span>
+                                        </a>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="filter-button">
-                            <button type="button">
-                                <a class="clearBtn d-block" href="#limpiar" class="text-danger">
-                                    <span>Limpiar</span>
-                                </a>
-                            </button>
+                        <div class="auth-divide cursor-pointer" 
+                            data-bs-toggle="collapse" 
+                            data-bs-target="#collapseFiltros" 
+                            aria-expanded="false" 
+                            aria-controls="collapseFiltros"
+                            id="btnFiltros">
+                            <span> 
+                                Cerrar Filtros
+                                <i class="bi bi-chevron-up"></i> 
+                            </span>
                         </div>
                     </div>
                 </form>
-
             </div>
 
             <div class="filter-header d-flex align-items-center justify-content-start">

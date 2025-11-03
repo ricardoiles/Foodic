@@ -51,7 +51,7 @@
                         </button>
                         <ul class="header-selection-list">
                             <li>
-                                <a href="https://demo.food-bank.xyz/lang/en" class="p-0">
+                                <a href="login.php" class="p-0">
                                     <i class="bi bi-box-arrow-in-right"></i>
                                     <span>
                                         Ingresar
@@ -59,7 +59,7 @@
                                 </a>
                             </li>   
                             <li>
-                                <a href="https://demo.food-bank.xyz/lang/en" class="p-0">
+                                <a href="register.php" class="p-0">
                                     <i class="bi bi-plus-circle"></i>
                                     <span>
                                         Crear
@@ -77,34 +77,15 @@
                                 <path d="M8 4.62C6.62 4.62 5.5 5.74 5.5 7.12C5.5 8.47333 6.56 9.57333 7.96667 9.61333C7.98667 9.61333 8.01333 9.61333 8.02667 9.61333C8.04 9.61333 8.06 9.61333 8.07333 9.61333C8.08 9.61333 8.08667 9.61333 8.08667 9.61333C9.43333 9.56666 10.4933 8.47333 10.5 7.12C10.5 5.74 9.38 4.62 8 4.62Z" fill="#EE1D48"></path>
                             </svg>
                         </button>
-                        <button type="button" class="header-selection-btn btn-login">
+
+                        <!-- ingresar button -->
+                         <button type="button" class="rest-book-btn" data-bs-toggle="modal" data-bs-target="#booking-modal">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                                 <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
                                 <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
                             </svg>
-                            <span class="span">
-                                Ingresar
-                            </span>
-                            <i class="fa-solid fa-chevron-down"></i>
+                            <span>Ingresar</span>
                         </button>
-                        <ul class="header-selection-list">
-                            <li>
-                                <a href="https://demo.food-bank.xyz/lang/en" class="p-0">
-                                    <i class="bi bi-person-circle"></i>
-                                    <span>
-                                        Ingresar
-                                    </span>
-                                </a>
-                            </li>   
-                            <li>
-                                <a href="https://demo.food-bank.xyz/lang/en" class="p-0">
-                                    <i class="bi bi-plus-circle"></i>
-                                    <span>
-                                        Registrarme
-                                    </span>
-                                </a>
-                            </li>            
-                        </ul>
                     </div>
                     <!--~~~~~~~ BEFORE SIGNIN/SIGNUP CODE END ~~~~~~~~-->
                     

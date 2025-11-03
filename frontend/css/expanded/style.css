@@ -4394,6 +4394,38 @@ input[type=number] {
     row-gap: 24px;
 }
 
+
+/* Asegurar que los inputs y selectores se extiendan completamente */
+.filter-search,
+.filter-select,
+.filter-button {
+    width: 100%;
+    height: 100%;
+}
+
+/* Hacer que los inputs dentro de .filter-search llenen el contenedor */
+.filter-search input[type="text"] {
+    width: 100%;
+}
+
+/* Asegurar que los botones dropdown se extiendan por completo */
+.filter-select .dropdown button.custonDropdown {
+    width: 100%;
+}
+
+/* Media Query: Para pantallas pequeñas, apilar los filtros */
+@media (max-width: 992px) {
+    .filter-options {
+        /* En dispositivos pequeños, cada filtro ocupa todo el ancho */
+        grid-template-columns: 1fr; 
+        column-gap: 0;
+    }
+    .filter-options > * {
+        grid-column: span 1 !important; /* Desactiva los spans anteriores */
+    }
+}
+
+
 @media (max-width: 575px) {
     .filter-options {
         row-gap: 18px;
@@ -4401,7 +4433,7 @@ input[type=number] {
 }
 
 .filter-options div:nth-child(1) {
-    grid-column: 1/5;
+    grid-column: 1/4;
 }
 
 @media (max-width: 1199px) {
@@ -4438,7 +4470,7 @@ input[type=number] {
 
 @media (max-width: 1199px) {
     .filter-options div:nth-child(3) {
-        grid-column: 1/5;
+        grid-column: 1/4;
     }
 }
 
@@ -4478,6 +4510,9 @@ input[type=number] {
     .filter-options div:nth-child(5) {
         grid-column: 1/13;
     }
+}
+.cursor-pointer{
+    cursor: pointer;
 }
 
 .filter-search {
@@ -6203,4 +6238,57 @@ input[type=number] {
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 16px;
+}
+
+
+/* --- Estilos para las estrellas interactivas (igual que antes) --- */
+.star-rating-interactive {
+    direction: ltr; /* Asegura que las estrellas se vean de izq a der */
+}
+
+.star-rating-interactive input[type="radio"] {
+    display: none;
+}
+
+.star-rating-interactive label {
+    font-size: 20px; /* ¡Aumenta el tamaño de las estrellas! */
+    color: #ccc;      /* Color por defecto (gris) */
+    cursor: pointer;
+    transition: color 0.2s ease-in-out; 
+    padding: 0 5px; /* Más espacio entre estrellas para que se parezcan a la imagen */
+    line-height: 1; 
+    display: flex; /* Asegura que el ícono esté centrado en su espacio */
+    align-items: center;
+    justify-content: center;
+}
+
+/* Efecto HOVER: Pinta la estrella y todas las anteriores al pasar el ratón */
+.star-rating-interactive label:hover,
+.star-rating-interactive label:hover ~ label {
+    color: #FFC107; /* Un dorado más estándar de Bootstrap para consistencia */
+}
+
+/* Estado SELECCIONADO: Pinta la estrella clickeada y todas las anteriores */
+.star-rating-interactive input[type="radio"]:checked ~ label {
+    color: #FFC107; /* Dorado cuando están seleccionadas */
+}
+
+/* Reiniciar el hover si ya hay una selección */
+.star-rating-interactive input[type="radio"]:checked ~ label:hover,
+.star-rating-interactive input[type="radio"]:checked ~ label:hover ~ label {
+    color: #FFC107; 
+}
+
+/* --- Estilos adicionales para el contenedor y texto --- */
+.card {
+    border: none; /* Sin borde, si quieres el efecto de la imagen */
+}
+
+.rounded-4 {
+    border-radius: 1.5rem !important; /* Bordes más redondeados */
+}
+
+h3 {
+    font-size: 1.8rem; /* Tamaño de fuente un poco más grande para la pregunta */
+    font-weight: 500;
 }
