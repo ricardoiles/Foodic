@@ -1242,7 +1242,7 @@ input[type=number] {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: start;
-    margin-bottom: 12px;
+    margin-bottom: 6px;
     gap: 6px;
 }
 
@@ -1274,7 +1274,7 @@ input[type=number] {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: start;
-    margin-bottom: 12px;
+    margin-bottom: 6px;
     gap: 10px;
 }
 
@@ -4667,7 +4667,7 @@ input[type=number] {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 32px 0px 24px;
+    padding: 0px 0px 24px;
     gap: 15px;
 }
 
@@ -6241,54 +6241,118 @@ input[type=number] {
 }
 
 
-/* --- Estilos para las estrellas interactivas (igual que antes) --- */
+/* --- Estilos para las Estrellas Interactivas --- */
+
+/* Contenedor principal: 
+   - Usa flex para alinear en una fila.
+   - Usa row-reverse para invertir el orden visual de los elementos 
+     (necesario para el truco de selección CSS).
+*/
 .star-rating-interactive {
-    direction: ltr; /* Asegura que las estrellas se vean de izq a der */
+    display: flex;
+    flex-direction: row-reverse; 
+    justify-content: center;
+    gap: 2px; /* Espacio entre estrellas */
 }
 
+/* Oculta los radio buttons (input) */
 .star-rating-interactive input[type="radio"] {
     display: none;
 }
 
+/* Estilo por defecto de la etiqueta (Label = la Estrella) */
 .star-rating-interactive label {
-    font-size: 20px; /* ¡Aumenta el tamaño de las estrellas! */
+    font-size: 20px; /* Tamaño de las estrellas (ajustado al ejemplo de tu imagen) */
     color: #ccc;      /* Color por defecto (gris) */
-    cursor: pointer;
-    transition: color 0.2s ease-in-out; 
-    padding: 0 5px; /* Más espacio entre estrellas para que se parezcan a la imagen */
+    cursor: pointer; /* Cursor de "manita" */
+    transition: color 0.2s ease-in-out; /* Transición suave al cambiar de color */
+    padding: 0 5px; 
     line-height: 1; 
-    display: flex; /* Asegura que el ícono esté centrado en su espacio */
+    display: flex; 
     align-items: center;
     justify-content: center;
 }
 
-/* Efecto HOVER: Pinta la estrella y todas las anteriores al pasar el ratón */
+/* 1. Estado SELECCIONADO: 
+   - Cuando un radio button está checked, este selector apunta a la etiqueta que está 
+     justo antes de él y a todas las etiquetas que le siguen en el DOM.
+   - Como el HTML va de 1 a 5 y el contenedor invierte el orden visual, 
+     esto logra el efecto de izquierda a derecha.
+*/
+.star-rating-interactive input[type="radio"]:checked ~ label {
+    color: #FFC107; /* Color Dorado/Amarillo de Bootstrap */
+}
+
+/* 2. Efecto HOVER: 
+   - Pinta la estrella sobre la que está el mouse y todas las que la preceden visualmente.
+*/
 .star-rating-interactive label:hover,
 .star-rating-interactive label:hover ~ label {
-    color: #FFC107; /* Un dorado más estándar de Bootstrap para consistencia */
+    color: #FFC107; /* Color Dorado/Amarillo de Bootstrap */
 }
 
-/* Estado SELECCIONADO: Pinta la estrella clickeada y todas las anteriores */
-.star-rating-interactive input[type="radio"]:checked ~ label {
-    color: #FFC107; /* Dorado cuando están seleccionadas */
-}
-
-/* Reiniciar el hover si ya hay una selección */
+/* Opcional: Asegura que el efecto hover funcione sobre el elemento seleccionado */
 .star-rating-interactive input[type="radio"]:checked ~ label:hover,
 .star-rating-interactive input[type="radio"]:checked ~ label:hover ~ label {
     color: #FFC107; 
 }
 
-/* --- Estilos adicionales para el contenedor y texto --- */
-.card {
-    border: none; /* Sin borde, si quieres el efecto de la imagen */
+
+/* Asegura que el contenedor de la tarjeta sea el padre de posicionamiento */
+.restaurant-card {
+    position: relative; /* Muy importante para posicionar el logo */
+    /* ... otros estilos para tu tarjeta (border, border-radius, shadow, etc.) */
+    display: block; /* Asegura que el enlace se comporte como un bloque */
+    border-radius: 10px; /* Ajusta el radio si tu tarjeta tiene bordes redondeados */
+    overflow: hidden; /* Asegura que nada se salga del card si hay bordes */
+    background-color: #fff; /* Fondo de la tarjeta */
+    margin-bottom: 24px; /* Espacio entre tarjetas */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    color: inherit; /* Hereda el color del texto */
 }
 
-.rounded-4 {
-    border-radius: 1.5rem !important; /* Bordes más redondeados */
+/* Estilos para el contenedor del logo */
+.restaurant-logo {
+    position: absolute;
+    /* Ajusta top y right para la posición deseada */
+    top: calc(200px - 90px); /* Ejemplo: Asumiendo que la imagen de portada mide 200px de alto, sube la mitad del logo (30px) */
+    right: 20px; /* Distancia desde la derecha */
+    z-index: 3; /* Asegura que esté por encima de otros elementos */
+    width: 62px; /* Ancho fijo para el logo */
+    height: 60px; /* Altura fija para el logo */
+    /* border: 4px solid #fff; Borde blanco alrededor del logo */
+    border-radius: 50%; /* Asegura que el borde también sea circular */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra para destacarlo */
+    background-color: #fff; /* Asegura un fondo blanco si la imagen es transparente */
 }
 
-h3 {
-    font-size: 1.8rem; /* Tamaño de fuente un poco más grande para la pregunta */
-    font-weight: 500;
+/* Asegura que la imagen dentro del logo ocupe todo el espacio */
+.restaurant-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Recorta la imagen para que rellene el círculo */
 }
+
+/* Ajustes al contenido para que el logo no lo pise */
+.restaurant-card .content {
+    padding: 15px; /* Ajusta el padding para que el logo no pise el texto */
+    padding-top: 30px; /* Aumenta el padding superior para dejar espacio al logo */
+    position: relative; /* Asegura que el contenido quede por debajo del logo */
+}
+
+/* Asegúrate de que la imagen de fondo también tenga bordes redondeados si la tarjeta los tiene */
+.bestSellingRestaurantsImage {
+    width: 100%;
+    height: 200px; /* Altura fija para la imagen de portada */
+    object-fit: cover;
+    border-top-left-radius: 10px; /* Si tu tarjeta es redondeada */
+    border-top-right-radius: 10px; /* Si tu tarjeta es redondeada */
+}
+
+/* Si tu imagen de portada es responsive, puedes ajustar el top del logo así: */
+/*
+.restaurant-logo {
+    top: calc(var(--altura-imagen-portada, 180px) - 30px); 
+    right: 20px;
+}
+*/

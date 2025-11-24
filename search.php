@@ -117,36 +117,61 @@
                                 </div>
                             </div>
                             <!-- 12 -->
-                            <div class="col-12 col-sm-4">
-                                <label class="text-center">Puntuación</label>
-                               <div class="star-rating-interactive d-flex justify-content-center gap-2">
-                                    <input type="radio" id="rating-5" name="star-rating" value="5" />
-                                    <label for="rating-5" title="5 estrellas">
-                                        <i class="bi bi-star-fill"></i>
-                                    </label>
-                                    
-                                    <input type="radio" id="rating-4" name="star-rating" value="4" />
-                                    <label for="rating-4" title="4 estrellas">
-                                        <i class="bi bi-star-fill"></i>
-                                    </label>
-                                    
-                                    <input type="radio" id="rating-3" name="star-rating" value="3" />
-                                    <label for="rating-3" title="3 estrellas">
-                                        <i class="bi bi-star-fill"></i>
-                                    </label>
-                                    
-                                    <input type="radio" id="rating-2" name="star-rating" value="2" />
-                                    <label for="rating-2" title="2 estrellas">
-                                        <i class="bi bi-star-fill"></i>
-                                    </label>
-                                    
-                                    <input type="radio" id="rating-1" name="star-rating" value="1" />
-                                    <label for="rating-1" title="1 estrella">
-                                        <i class="bi bi-star-fill"></i>
-                                    </label>
+                            <div class="col-12 col-sm-3">
+                                <div class="d-flex align-items-center justify-content-start gap-2 mt-2">
+                                    <label class="mb-0 text-nowrap">Puntuación:</label>
+                                    <div class="star-rating-interactive d-flex justify-content-end flex-grow-1 gap-1">
+                                        <input type="radio" id="rating-1" name="star-rating" value="1" />
+                                        <label for="rating-1" title="1 estrella">
+                                            <i class="bi bi-star-fill"></i>
+                                        </label>
+                                        <input type="radio" id="rating-2" name="star-rating" value="2" />
+                                        <label for="rating-2" title="2 estrellas">
+                                            <i class="bi bi-star-fill"></i>
+                                        </label>
+                                        <input type="radio" id="rating-3" name="star-rating" value="3" />
+                                        <label for="rating-3" title="3 estrellas">
+                                            <i class="bi bi-star-fill"></i>
+                                        </label>
+                                        <input type="radio" id="rating-4" name="star-rating" value="4" />
+                                        <label for="rating-4" title="4 estrellas">
+                                            <i class="bi bi-star-fill"></i>
+                                        </label>
+                                        <input type="radio" id="rating-5" name="star-rating" value="5" />
+                                        <label for="rating-5" title="5 estrellas">
+                                            <i class="bi bi-star-fill"></i>
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-3">
+                            <div class="col-12 col-sm-2">
+                                <div class="dropdown">
+                                    <button class="custonDropdown d-flex justify-content-center" type="button" id="zonaDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Horario
+                                    </button>
+                                    <ul class="dropdown-menu w-100 p-3" aria-labelledby="zonaDropdown" style="min-width: 250px;">
+                                        <div class="row">
+                                            <div class="col-xl-6">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" id="check-5" type="checkbox" name="cuisines[]" value="pizza">
+                                                    <label class="form-check-label" for="check-5">Abierto</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" id="check-4" type="checkbox" name="cuisines[]" value="mexican">
+                                                    <label class="form-check-label" for="check-4">Cerrado</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-3">
+                                            <button type="button" class="btn btn-outline-secondary btn-sm panel-cancel">Cancelar</button>
+                                            <button type="button" class="btn btn-primary btn-sm panel-apply">Aplicar</button>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-2">
                                 <div class="dropdown">
                                     <button class="custonDropdown d-flex justify-content-center" type="button" id="zonaDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                                         Zona
@@ -173,7 +198,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-3">
+                            <div class="col-12 col-sm-2">
                                 <div class="dropdown">
                                     <button class="custonDropdown d-flex justify-content-center" type="button" id="distanciaDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                                         Categorías
@@ -252,10 +277,14 @@
                             <span style="position: absolute; top: 10px; left: 10px; background: rgba(255,255,255,0.9); color: #1F1F39; padding: 4px 12px; border-radius: 6px; font-weight: 500; font-size: 13px; z-index: 2;">
                                 <i class="bi bi-bookmarks"></i> Desayunos y Almuerzos
                             </span>
-                            <img class="bestSellingRestaurantsImage" src="storage/1/conversions/sultans-dine-image.jpg" alt="restaurant">
+                            <img class="bestSellingRestaurantsImage" src="storage/7/conversions/wham-bam-burrito-image.jpg" alt="restaurant">
                         </figure>
+
+                        <div class="restaurant-logo">
+                            <img src="images/seeder/logos/restaurant-logo.jpg" alt="Logo del restaurante" class="img-fluid rounded-circle shadow">
+                        </div>
                         <div class="content">
-                            <h4>La Carbonera 
+                            <h4>La Sazón Hogareña
                                 <sup style="font-size:14px;" class="text-success">
                                     <i class="bi bi-patch-check-fill"></i>
                                 </sup>
@@ -268,13 +297,14 @@
                                 <p><span>&middot;</span></p>
                                 <p>
                                     <span>
-                                        <i class="bi bi-chat-square"></i>
+                                        <i class="bi bi-chat"></i>
                                         <span>25</span>
                                         &middot;
                                     </span>
                                 </p>
                                 <p class="off">
-                                    Cerrado ahora
+                                    <i class="bi bi-calendar-date" ></i>
+                                    Cerrado
                                 </p>
                             </div>
                             <div class="location">
@@ -282,27 +312,30 @@
                                 <span>B. Trinidad &middot; Cra 4 #1-23 </span>
                             </div>
                             <div class="location">
-                                <i class="bi bi-geo-alt" style="color: #1F1F39;"></i>
-                                <span>A 4km &middot; A 10 Min </span>
+                                <i class="bi bi-car-front-fill" style="color: #1F1F39;"></i>
+                                <span>A 4km &middot; 
+                                    <i class="bi bi-person-walking" style="color: #1F1F39;"></i> A 10 Min </span>
                             </div>
-                            <p class="" style="font-weight: 300; color: #1F1F39; text-transform: none;">
+                            <p class="mt-2" style="font-weight: 300; color: #1F1F39; text-transform: none;">
                                 Restaurante especializado en carnes a la parrilla. Ambiente familiar y acogedor.
                             </p>
                         </div>
                     </a>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <a href="restaurant/mr-beast-burger.html" class="restaurant-card">
+                    <a href="restaurant/sultans-dine.html" class="restaurant-card">
                         <figure class="figure position-relative">
                             <span style="position: absolute; top: 10px; left: 10px; background: rgba(255,255,255,0.9); color: #1F1F39; padding: 4px 12px; border-radius: 6px; font-weight: 500; font-size: 13px; z-index: 2;">
-                                <i class="bi bi-bookmarks"></i> 
-                                Comidas Rápidas
+                                <i class="bi bi-bookmarks"></i> Almuerzos
                             </span>
-                            <img class="bestSellingRestaurantsImage" src="storage/2/conversions/mr-beast-burger-image.jpg" alt="restaurant">
+                            <img class="bestSellingRestaurantsImage" src="storage/8/conversions/almuerzo.jpg" alt="restaurant">
                         </figure>
+
+                        <div class="restaurant-logo">
+                            <img src="images/seeder/logos/logo-restaurante.avif" alt="Logo del restaurante" class="img-fluid rounded-circle shadow">
+                        </div>
                         <div class="content">
-                            <h4>
-                                La Mejor Burguer
+                            <h4>La Cocina De Mamá 
                                 <sup style="font-size:14px;" class="text-success">
                                     <i class="bi bi-patch-check-fill"></i>
                                 </sup>
@@ -315,40 +348,48 @@
                                 <p><span>&middot;</span></p>
                                 <p>
                                     <span>
-                                        <i class="bi bi-chat-square"></i>
-                                        <span>50</span>
+                                        <i class="bi bi-chat"></i>
+                                        <span>5</span>
                                         &middot;
                                     </span>
                                 </p>
                                 <p class="on">
-                                    Abierto ahora
+                                    <i class="bi bi-calendar-date" ></i>
+                                    Abierto
                                 </p>
                             </div>
                             <div class="location">
-                                <i class="bi bi-geo-alt" style="color: #1F1F39;" ></i>
-                                <span>B. Aguablanca &middot; Cra 1 #5-30</span>
+                                <i class="bi bi-geo-alt" style="color: #1F1F39;"></i>
+                                <span>B. Centro &middot; Cra 4 #5-10 </span>
                             </div>
-                            <p class="" style="font-weight: 300; color: #1F1F39; text-transform: none;">
+                            <div class="location">
+                                <i class="bi bi-car-front-fill" style="color: #1F1F39;"></i>
+                                <span>A 10km &middot; 
+                                    <i class="bi bi-person-walking" style="color: #1F1F39;"></i> A 20 Min </span>
+                            </div>
+                            <p class="mt-2" style="font-weight: 300; color: #1F1F39; text-transform: none;">
                                 Restaurante especializado en carnes a la parrilla. Ambiente familiar y acogedor.
                             </p>
                         </div>
                     </a>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <a href="restaurant/starbucks.html" class="restaurant-card">
+                    <a href="restaurant/sultans-dine.html" class="restaurant-card">
                         <figure class="figure position-relative">
                             <span style="position: absolute; top: 10px; left: 10px; background: rgba(255,255,255,0.9); color: #1F1F39; padding: 4px 12px; border-radius: 6px; font-weight: 500; font-size: 13px; z-index: 2;">
-                                <i class="bi bi-bookmarks"></i> 
-                                Jugos y Meriendas
+                                <i class="bi bi-bookmarks"></i> Plancha y Parrilla
                             </span>
-                            <img class="bestSellingRestaurantsImage" src="storage/3/conversions/starbucks-image.jpg" alt="restaurant">
+                            <img class="bestSellingRestaurantsImage" src="storage/6/conversions/gustosa-pasta-image.jpg" alt="restaurant">
                         </figure>
+
+                        <div class="restaurant-logo">
+                            <img src="images/seeder/logos/barbeque-restaurant-logo.jpg" alt="Logo del restaurante" class="img-fluid rounded-circle shadow">
+                        </div>
                         <div class="content">
-                            <h4>
-                                Tio Rico Jugueria
-                                <sup style="font-size:14px;" class="text-success">
+                            <h4>La Carbonera BBQ
+                                <!-- <sup style="font-size:14px;" class="text-success">
                                     <i class="bi bi-patch-check-fill"></i>
-                                </sup>
+                                </sup> -->
                             </h4>
                             <div class="ratings">
                                 <p>
@@ -358,237 +399,81 @@
                                 <p><span>&middot;</span></p>
                                 <p>
                                     <span>
-                                        <i class="bi bi-chat-square"></i>
-                                        <span>25</span>
+                                        <i class="bi bi-chat"></i>
+                                        <span>20</span>
                                         &middot;
                                     </span>
                                 </p>
-                                <p class="on"> abierto ahora </p>
+                                <p class="on">
+                                    <i class="bi bi-calendar-date" ></i>
+                                    Abierto
+                                </p>
                             </div>
                             <div class="location">
-                                <i class="bi bi-geo-alt" style="color: #1F1F39;" ></i>
-                                <span>B. Solarte &middot; Cra 3sur #12-26</span>
+                                <i class="bi bi-geo-alt" style="color: #1F1F39;"></i>
+                                <span>B. Trinidad &middot; Cra 4 #1-23 </span>
                             </div>
-                            <p class="" style="font-weight: 300; color: #1F1F39; text-transform: none;">
+                            <div class="location">
+                                <i class="bi bi-car-front-fill" style="color: #1F1F39;"></i>
+                                <span>A 4km &middot; 
+                                    <i class="bi bi-person-walking" style="color: #1F1F39;"></i> A 10 Min </span>
+                            </div>
+                            <p class="mt-2" style="font-weight: 300; color: #1F1F39; text-transform: none;">
                                 Restaurante especializado en carnes a la parrilla. Ambiente familiar y acogedor.
                             </p>
                         </div>
                     </a>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <a href="restaurant/mcdonalds.html" class="restaurant-card">
-                            <figure class="figure position-relative">
+                    <a href="restaurant/sultans-dine.html" class="restaurant-card">
+                        <figure class="figure position-relative">
                             <span style="position: absolute; top: 10px; left: 10px; background: rgba(255,255,255,0.9); color: #1F1F39; padding: 4px 12px; border-radius: 6px; font-weight: 500; font-size: 13px; z-index: 2;">
-                                <i class="bi bi-bookmarks"></i> 
-                                Pollo Frito
+                                <i class="bi bi-bookmarks"></i> Asiatica
                             </span>
-                                <img class="bestSellingRestaurantsImage" src="storage/4/conversions/frisby.jpg" alt="restaurant">
-                            </figure>
-                            <div class="content">
-                                <h4>
-                                    Frisby
-                                    <sup style="font-size:14px;" class="text-success">
-                                        <i class="bi bi-patch-check-fill"></i>
-                                    </sup>
-                                </h4>
-                                <div class="ratings">
-                                    <p>
-                                        <i class="fa-solid fa-star" style="color: #fda708cb; font-size: 14px;"></i>
-                                        <span>4</span>
-                                    </p>
-                                    <p><span>&middot;</span></p>
-                                    <p>
-                                        <span>
-                                            <i class="bi bi-chat-square"></i>
-                                            <span>40</span>
-                                            &middot;
-                                        </span>
-                                    </p>
-                                    <p class="off">
-                                        Cerrado ahora
-                                    </p>
-                                </div>
-                                <div class="location">
-                                    <i class="bi bi-geo-alt" style="color: #1F1F39;" ></i>
-                                    <span>Centro comercial San antonio</span>
-                                </div>
-                                <p class="" style="font-weight: 300; color: #1F1F39; text-transform: none;">
-                                    Restaurante especializado en carnes a la parrilla. Ambiente familiar y acogedor.
+                            <img class="bestSellingRestaurantsImage" src="storage/1/conversions/sultans-dine-image.jpg" alt="restaurant">
+                        </figure>
+
+                        <div class="restaurant-logo">
+                            <img src="images/seeder/logos/sushi-rest.jpeg" alt="Logo del restaurante" class="img-fluid rounded-circle shadow">
+                        </div>
+                        <div class="content">
+                            <h4>Sushi Food
+                                <sup style="font-size:14px;" class="text-success">
+                                    <i class="bi bi-patch-check-fill"></i>
+                                </sup>
+                            </h4>
+                            <div class="ratings">
+                                <p>
+                                    <i class="fa-solid fa-star" style="color: #fda708cb; font-size: 14px;"></i>
+                                    <span>3</span>
+                                </p>
+                                <p><span>&middot;</span></p>
+                                <p>
+                                    <span>
+                                        <i class="bi bi-chat"></i>
+                                        <span>25</span>
+                                        &middot;
+                                    </span>
+                                </p>
+                                <p class="off">
+                                    <i class="bi bi-calendar-date" ></i>
+                                    Cerrado
                                 </p>
                             </div>
-                        </a>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <a href="restaurant/burger-king.html" class="restaurant-card">
-                            <figure class="figure position-relative">
-                                <span style="position: absolute; top: 10px; left: 10px; background: rgba(255,255,255,0.9); color: #1F1F39; padding: 4px 12px; border-radius: 6px; font-weight: 500; font-size: 13px; z-index: 2;">
-                                    <i class="bi bi-bookmarks"></i> 
-                                    Arroz Especial
-                                </span>
-                                <img class="bestSellingRestaurantsImage" src="storage/5/conversions/chino.jpg" alt="restaurant">
-                            </figure>
-                            <div class="content">
-                                <h4>
-                                    Como Arroz Nogales
-                                    <sup style="font-size:14px;" class="text-success">
-                                        <i class="bi bi-patch-check-fill"></i>
-                                    </sup>
-                                </h4>
-                                <div class="ratings">
-                                    <p>
-                                        <i class="fa-solid fa-star" style="color: #fda708cb; font-size: 14px;"></i>
-                                        <span>3</span>
-                                    </p>
-                                    <p><span>&middot;</span></p>
-                                    <p>
-                                        <span>
-                                            <i class="bi bi-chat-square"></i>
-                                            <span>25</span>
-                                            &middot;
-                                        </span>
-                                    </p>
-                                    <p class="off">
-                                        Cerrado ahora
-                                    </p>
-                                </div>
-                                <div class="location">
-                                    <i class="bi bi-geo-alt" style="color: #1F1F39;" ></i>
-                                    <span>B. Nogales &middot; Cra 5 Este #1-10</span>
-                                </div>
-                                <p class="" style="font-weight: 300; color: #1F1F39; text-transform: none;">
-                                    Restaurante especializado en carnes a la parrilla. Ambiente familiar y acogedor.
-                                </p>
+                            <div class="location">
+                                <i class="bi bi-geo-alt" style="color: #1F1F39;"></i>
+                                <span>B. Trinidad &middot; Cra 4 #1-23 </span>
                             </div>
-                        </a>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <a href="restaurant/gustosa-pasta.html" class="restaurant-card">
-                            <figure class="figure position-relative">
-                                <span style="position: absolute; top: 10px; left: 10px; background: rgba(255,255,255,0.9); color: #1F1F39; padding: 4px 12px; border-radius: 6px; font-weight: 500; font-size: 13px; z-index: 2;">
-                                    <i class="bi bi-bookmarks"></i> 
-                                    Restaurante Americano
-                                </span>
-                                <img class="bestSellingRestaurantsImage" src="storage/6/conversions/gustosa-pasta-image.jpg" alt="restaurant">
-                            </figure>
-                            <div class="content">
-                                <h4>
-                                    Ruta 66
-                                    <sup style="font-size:14px;" class="text-success">
-                                        <i class="bi bi-patch-check-fill"></i>
-                                    </sup>
-                                </h4>
-                                <div class="ratings">
-                                    <p>
-                                        <i class="fa-solid fa-star" style="color: #fda708cb; font-size: 14px;"></i>
-                                        <span>5</span>
-                                    </p>
-                                    <p><span>&middot;</span></p>
-                                    <p>
-                                        <span>
-                                            <i class="bi bi-chat-square"></i>
-                                            <span>32</span>
-                                            &middot;
-                                        </span>
-                                    </p>
-                                    <p class="on">
-                                        Abierto ahora
-                                    </p>
-                                </div>
-                                <div class="location">
-                                    <i class="bi bi-geo-alt" style="color: #1F1F39;" ></i>
-                                    <span>B. Quinche &middot; Cl. 4 #1 A 46</span>
-                                </div>
-                                <p class="" style="font-weight: 300; color: #1F1F39; text-transform: none;">
-                                    Restaurante especializado en carnes a la parrilla. Ambiente familiar y acogedor.
-                                </p>
+                            <div class="location">
+                                <i class="bi bi-car-front-fill" style="color: #1F1F39;"></i>
+                                <span>A 4km &middot; 
+                                    <i class="bi bi-person-walking" style="color: #1F1F39;"></i> A 10 Min </span>
                             </div>
-                        </a>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <a href="restaurant/wham-bam-burrito.html" class="restaurant-card">
-                            <figure class="figure position-relative">
-                                <span style="position: absolute; top: 10px; left: 10px; background: rgba(255,255,255,0.9); color: #1F1F39; padding: 4px 12px; border-radius: 6px; font-weight: 500; font-size: 13px; z-index: 2;">
-                                    <i class="bi bi-bookmarks"></i> 
-                                    Gastro Bar
-                                </span>
-                                <img class="bestSellingRestaurantsImage" src="storage/7/conversions/wham-bam-burrito-image.jpg" alt="restaurant">
-                            </figure>
-                            <div class="content">
-                                <h4>
-                                    Como caido del cielo
-                                    <sup style="font-size:14px;" class="text-success">
-                                        <i class="bi bi-patch-check-fill"></i>
-                                    </sup>
-                                </h4>
-                                <div class="ratings">
-                                    <p>
-                                        <i class="fa-solid fa-star" style="color: #fda708cb; font-size: 14px;"></i>
-                                        <span>3</span>
-                                    </p>
-                                    <p><span>&middot;</span></p>
-                                    <p>
-                                        <span>
-                                            <i class="bi bi-chat-square"></i>
-                                            <span>25</span>
-                                            &middot;
-                                        </span>
-                                    </p>
-                                    <p class="off">
-                                        Cerrado ahora
-                                    </p>
-                                </div>
-                                <div class="location">
-                                    <i class="bi bi-geo-alt" style="color: #1F1F39;" ></i>
-                                    <span>Via al terminal &middot; Cra. 4 #27-185</span>
-                                </div>
-                                <p class="" style="font-weight: 300; color: #1F1F39; text-transform: none;">
-                                    Restaurante especializado en carnes a la parrilla. Ambiente familiar y acogedor.
-                                </p>
-                            </div>
-                        </a>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <a href="restaurant/the-salad-god.html" class="restaurant-card">
-                            <figure class="figure position-relative">
-                                <span style="position: absolute; top: 10px; left: 10px; background: rgba(255,255,255,0.9); color: #1F1F39; padding: 4px 12px; border-radius: 6px; font-weight: 500; font-size: 13px; z-index: 2;">
-                                    <i class="bi bi-bookmarks"></i> 
-                                    Desayunos y Almuerzos
-                                </span>
-                                <img class="bestSellingRestaurantsImage" src="storage/8/conversions/almuerzo.jpg" alt="restaurant">
-                            </figure>
-                            <div class="content">
-                                <h4>
-                                    La Sazon Hogareña
-                                    <sup style="font-size:14px;" class="text-success">
-                                        <i class="bi bi-patch-check-fill"></i>
-                                    </sup>
-                                </h4>
-                                <div class="ratings">
-                                    <p>
-                                        <i class="fa-solid fa-star" style="color: #fda708cb; font-size: 14px;"></i>
-                                        <span>3</span>
-                                    </p>
-                                    <p><span>&middot;</span></p>
-                                    <p>
-                                        <span>
-                                            <i class="bi bi-chat-square"></i>
-                                            <span>25</span>
-                                            &middot;
-                                        </span> 
-                                    </p>
-                                    <p class="on">
-                                        Abierto ahora
-                                    </p>
-                                </div>
-                                <div class="location">
-                                    <i class="bi bi-geo-alt" style="color: #1F1F39;" ></i>
-                                    <span>Centro &middot; Cl. 10 #3-34</span>
-                                </div>
-                                <p class="" style="font-weight: 300; color: #1F1F39; text-transform: none;">
-                                    Restaurante especializado en carnes a la parrilla. Ambiente familiar y acogedor.
-                                </p>
-                            </div>
-                        </a>
+                            <p class="mt-2" style="font-weight: 300; color: #1F1F39; text-transform: none;">
+                                Restaurante especializado en carnes a la parrilla. Ambiente familiar y acogedor.
+                            </p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
